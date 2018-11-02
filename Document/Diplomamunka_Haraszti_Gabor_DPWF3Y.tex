@@ -50,6 +50,7 @@
 \headheight 10mm
 \headsep 5mm
 \textheight 231mm
+\footskip 20mm
 
 % sorköz 1,15
 \linespread{1.15}
@@ -62,16 +63,16 @@
 		%ez mindent töröl:
 		\fancyhf{}
 		% a láblécbe jobboldalra kerüljön az oldalszám:
-		\fancyfoot[R]{\thepage}
+		\fancyfoot[C]{\thepage}
 		%elválasztó vonal sem kell:
 		\renewcommand{\headrulewidth}{0pt}
 	}
 	
 	%A TÖBBI OLDAL FEJ ÉS LÁBLÉCE:
-	\pagestyle{fancy}
+	\pagestyle{plain}
 	\fancyhf{}
-	\fancyhead[L]{Adatk\"{ö}zpontok oszt\'{a}lyoz\'{a}sa}
-	\fancyfoot[R]{\thepage}
+	\fancyhead[L]{}
+	\fancyfoot[C]{\thepage}
 	
 	%A címoldalra se fej- se lábléc nem kell:
 	\thispagestyle{empty}
@@ -129,9 +130,34 @@
 	
 	\chapter{Az irodalom alapján a lehetséges megközelítési módok és megoldások áttekintése	és elemzése}
 	
+	A munka megkezdése elõtt célszerû tájékozódni a probléma lehetséges megoldásairól a szakirodalomban, ami után a megoldási alternatívák már ki tudnak rajzolódni és lehetséges lesz szakmailag megalapozott javaslat megfogalmazására.
+	
 	\section{Irodalmi áttekintés}
 	
+	Galambos Péter cikkébõl \cite{GP_Cloud} megtudhatjuk, hogy habár sokáig megfelelt a robotikában a helyi kontrollerekrõl vezérelni a robotokat, a manapság szükséges számítási kapacitás igénynek ez már nem felel meg. Az új kihívások szükségessé teszik külsõ erõforrások bevonását is a munkába. A kapacitás bõvítésnek több módja is van a lokális szerverektõl a publikus felhõ szolgáltatásokig bezárólag. A cikk bemutatja a hagyományos IT területtõl némileg eltérõ robotikai alkalmazások szükségleteit a felhõ szolgáltatásokban.\\
 	
+	\noindent
+	Elõször ismertetésre kerülnek a fõbb paradigmák a robotika kontextusában:\\
+	
+	\noindent
+	\textbf{Cloud computing:} azaz felhõ számítástechnika, hozzáférés nagy, jól skálázható hálózati számítási kapacitásokhoz (végrahajtási, memória és disk) távolról. Ez az infrastruktúra lehet privát, publikus és hibrid.\\
+	
+	\noindent
+	\textbf{Fog computing:} azaz "köd" számítástechnika, olyan számítógép eszközöket jelent, amik a robot kontrollerek mellett helyben, mintegy gateway-ként teszik lehetõvé azok illesztését a felhõ szolgáltatásokhoz, interfészt jelentve a kétféle, nagyon különbözõ rendszer között, valamint képesek helyi, nagy tömegû, például a robot szenzorokból érkezõ adatok elõ-feldolgozására.\\
+	
+	\noindent
+	\textbf{Mist computing:} azaz pára számítástechnika {\color{red}Meg kell találni a megfelelõ magyar szavakat a Fog és Mist szavakra!} , a beépített eszközök számítási kapacitását jelenti, tipikusan elõ-feldolgozzák és szûrik a szenzorok adatait, mielõtt továbbítanák a köd és felhõ szintjére.\\
+	
+	A cikk továbbá kitér a felhõbe kiszervezett számítástechnika elõnyeire és hátrányaira, az elfogadható késleltetés és adatforgalom tükrében. Minden esetben a tervezõ mérnök kezébe adva a döntés jogát az egyes szolgáltatások helyének megtervezésére az igények szerint. Bevezeti továbbá a \textbf{puppet robot}, azaz báb-robot fogalmát, mely, mely mint fizikai egység már csak az érzékelésért és beavatkozásért felelõs szemben a hagyományos gyártási forgatókönyvekkel.\\
+	
+	A folytatásban tisztázásra kerül egy nagyon fontos aspektusa a témának, az architekturális kihívások és kulcs technológiák a felhõ robotikában. a szerzõ élesen elkülönít kétféle szolgáltatás típust -- vagy inkább képességet, robotikai értelemben az SaaS inkább Skills as a Service-t jelent -- az állapot-információk szerint, mégpedig:\\
+	
+	\noindent
+	\textbf{Context-free:} azaz állapot független szolgáltatásoknak nincs szükségük több információra, mint például a pillanatnyi állapot, vagy az alkalmazás belsõ állapota. Mûködésükhöz elegendõ a meghívásukhoz szükséges adat. Ezek a szolgáltatások tipikusan egyszerûen implementálhatóak, akár RESTful microservice-ben, akár felhõs funkcióban  -- mint amilyen az AWS Lambda, vagy az Azure Functions -- és könnyen skálázhatóak maradnak.\\
+
+
+	\noindent
+	\textbf{Contextfulé:} azaz állapot függõ szolgáltatásoknak szükségük van információra a tárgyrendszerrõl, annak fizikai struktúrájáról, pillanatnyi belsõ állapotáról. Ezek a szolgáltatások viszont már nem skálázódnak jól, tipikusan szükséges hozzájuk dedikált ROS \cite{ROS} példány. (A ROS pillanatnyilag csak egy robot környezetet támogat)\\
 	
 	\chapter{A megoldási módszer kiválasztása, a választás indoklása}
 	

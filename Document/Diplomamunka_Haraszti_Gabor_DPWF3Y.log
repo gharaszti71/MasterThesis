@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.31)  2 NOV 2018 14:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.31)  2 NOV 2018 20:16
 entering extended mode
 **./Diplomamunka_Haraszti_Gabor_DPWF3Y.tex
 (Diplomamunka_Haraszti_Gabor_DPWF3Y.tex
@@ -213,19 +213,19 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 (Diplomamunka_Haraszti_Gabor_DPWF3Y.aux)
 \openout1 = `Diplomamunka_Haraszti_Gabor_DPWF3Y.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 58.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -305,28 +305,28 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 83.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 84.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 89.
-LaTeX Font Info:    Try loading font information for U+msa on input line 94.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 90.
+LaTeX Font Info:    Try loading font information for U+msa on input line 95.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 94.
+LaTeX Font Info:    Try loading font information for U+msb on input line 95.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 106.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 107.
  [1
 Non-PDF special ignored!
 <special> header=psfrag.pro
 
 {C:/Users/gharaszti/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 120.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 121.
 
 (Diplomamunka_Haraszti_Gabor_DPWF3Y.toc)
 \tf@toc=\write4
@@ -348,71 +348,134 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 
 ]
 4. fejezet.
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--144
+
+ []
+
+
+Overfull \hbox (1.48468pt too wide) in paragraph at lines 145--147
+\T1/ptm/m/n/12 a robot kon-trollerek mel-lett hely-ben, mint-e-gy gateway-ként 
+teszik lehet®vé azok illesztését
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--147
+
+ []
+
 [6
 
 ]
-5. fejezet.
-[7
+Overfull \hbox (5.0261pt too wide) in paragraph at lines 148--150
+\T1/ptm/b/n/12 Mist com-put-ing: \T1/ptm/m/n/12 azaz pára számítástech-ni-ka []
+Meg kell talál-ni a megfelel® mag-yar szavakat
+ []
 
-]
-6. fejezet.
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
+ []
+
+
+Overfull \hbox (2.07805pt too wide) in paragraph at lines 155--157
+\T1/ptm/m/n/12 cióra, mint például a pil-lanat-nyi ál-lapot, vagy az al-ka-lmaz
+ás bel-s® ál-lapota. M¶ködésükhöz
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
+
+ []
+
+[7]
+5. fejezet.
 [8
 
 ]
-7. fejezet.
+6. fejezet.
 [9
 
 ]
-8. fejezet.
+7. fejezet.
 [10
 
 ]
-9. fejezet.
+8. fejezet.
 [11
 
 ]
-10. fejezet.
+9. fejezet.
 [12
 
 ]
-11. fejezet.
+10. fejezet.
 [13
 
 ]
-12. fejezet.
+11. fejezet.
 [14
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 161.
+12. fejezet.
+[15
+
+]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 189.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 161.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 189.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 161.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 189.
 
-Underfull \hbox (badness 1062) in paragraph at lines 167--168
+Underfull \hbox (badness 1062) in paragraph at lines 195--196
 []\T1/ptm/m/n/12 Docker lightweight con-tain-er en-gine (https://www.docker.com
 /products/docker-
  []
 
-[15
+[16
 
 ]
 13. fejezet.
-[16
+[17
 
 ] (Diplomamunka_Haraszti_Gabor_DPWF3Y.aux) ) 
 Here is how much of TeX's memory you used:
  4722 strings out of 492970
- 65977 string characters out of 3135842
+ 65965 string characters out of 3135842
  153353 words of memory out of 3000000
  8503 multiletter control sequences out of 15000+200000
  34563 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,43p,458b,296s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,11n,43p,581b,292s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/
 enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
@@ -420,10 +483,10 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on Diplomamunka_Haraszti_Gabor_DPWF3Y.pdf (16 pages, 88240 bytes
+Output written on Diplomamunka_Haraszti_Gabor_DPWF3Y.pdf (17 pages, 93193 bytes
 ).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
+ 82 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
