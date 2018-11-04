@@ -167,7 +167,27 @@
 	
 	Fontos részlet -- fõleg a gyártás számára --, hogy a robotrendszerek energia hatékony módon dolgozzanak, amiben szintén nélkülözhetetlen lehet a felhõ szerepe, de fontos lehet olyan helyzetekben is, amikor az energiavételezés lehetõségei korlátozottak. Az energia-optimalizált mûködés fontos szerepet játszik a zöld-felhasználásban, nem csak a gyártás területén.\\
 	
-	Az IJCA cikke \cite{ROS_Cloud} a ROS alapú felhõ-robotikával foglalkozik.
+	Az IJCA cikke \cite{ROS_Cloud} a ROS alapú felhõ-robotikával foglalkozik. Elõször is fogalmakat tisztáz. Az operációs rendszer és a robotikai alkalmazások között definiál egy réteget, a "Robotic middleware"-t, mely az alkalmazások elõl elfedi a hardware és OS rétegeket, így egyszerûvé téve a robotikai fejlesztéseket és olcsóbbá téve azt. A ROS \cite{ROS} -- Robot Operating System -- egy nyílt forráskódú "meta-operációs rendszer", ami biztosítja a
+	
+	\begin{itemize}
+		\item Hardware abstrakciót\vspace{-9pt}
+		\item Alacsony szintû eszköz vezérlést\vspace{-9pt}
+		\item Üzenet továbbítást\vspace{-9pt}
+		\item Csomag menedzsmentet\vspace{-9pt}
+	\end{itemize}
+	
+	A cikk leírja a ROS alapfogalmait, részeit. Alapvetõ egység a Node, ami reprezentálja a ROS-on belül a felületet a programok felé. Egy ROS példány több Node-ot is indíthat. Az egyes Node-ok tartalmazzák azután a kétféle ROS szolgáltatás típust és a message-eket. 
+	
+	\begin{description}
+		\item[message] A message-ek az üzeneteket reprezentálják ROS-on belül.\vspace{-9pt}
+		\item[service] A service-ek message párokat jelképeznek, kérés/válasz-ként, más rendszerekbe a függvények felelnek meg nekik.\vspace{-9pt}
+		\item[topic] A Node-ok fel tudnak iratkozni topic-okra és maguk is tudnak kiajánlani topic-okat -- megvalósítva az informatikában jól ismert publisher/subscriber mintát --. Egy topic-ba több node is írhat (publish) és több node is olvashat (subscrbe) belõle. \vspace{-9pt}
+	\end{description}
+
+	\noindent \\
+	A ROS-t számos nyelvbõl el lehet érni, , többek között C++, Python, lisp, Java, stb. környezetekbõl. Illetve rendelkezik egy csomag kezelõvel, amivel finomhangolható, hogy mely szoftverkomponensek legyenek felhasználva az adott ROS példányban. A ROS elsõdleges célja, hogy támogassa a kód újrafelhasználást a robotikai kutatásokban és fejlesztésekben \cite{ROS}. A ROS támogatja a moduláris, {\color{red}tool-based} fejlesztés filozófiáját a robo-tikában.\\
+	
+	A Springer kiber-fizikai architektúra tervezéssel foglalkozó cikke \cite{CPS} 
 	
 	\chapter{A megoldási módszer kiválasztása, a választás indoklása}
 	

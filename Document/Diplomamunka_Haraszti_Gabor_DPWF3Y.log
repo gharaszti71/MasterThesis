@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.31)  4 NOV 2018 12:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.31)  4 NOV 2018 16:33
 entering extended mode
 **./Diplomamunka_Haraszti_Gabor_DPWF3Y.tex
 (Diplomamunka_Haraszti_Gabor_DPWF3Y.tex
@@ -439,59 +439,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
-[8]
-5. fejezet.
-[9
 
-]
-6. fejezet.
+Underfull \hbox (badness 10000) in paragraph at lines 187--189
+
+ []
+
+[8] [9]
+5. fejezet.
 [10
 
 ]
-7. fejezet.
+6. fejezet.
 [11
 
 ]
-8. fejezet.
+7. fejezet.
 [12
 
 ]
-9. fejezet.
+8. fejezet.
 [13
 
 ]
-10. fejezet.
+9. fejezet.
 [14
 
 ]
-11. fejezet.
+10. fejezet.
 [15
 
 ]
-12. fejezet.
+11. fejezet.
 [16
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 199.
+12. fejezet.
+[17
+
+]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 219.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 199.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 219.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 199.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 219.
 
-Underfull \hbox (badness 1062) in paragraph at lines 205--206
+Underfull \hbox (badness 1062) in paragraph at lines 225--226
 []\T1/ptm/m/n/12 Docker lightweight con-tain-er en-gine (https://www.docker.com
 /products/docker-
  []
 
-[17
+[18
 
 ]
 13. fejezet.
-[18
+[19
 
 ] (Diplomamunka_Haraszti_Gabor_DPWF3Y.aux) ) 
 Here is how much of TeX's memory you used:
@@ -509,10 +514,10 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on Diplomamunka_Haraszti_Gabor_DPWF3Y.pdf (18 pages, 95487 bytes
+Output written on Diplomamunka_Haraszti_Gabor_DPWF3Y.pdf (19 pages, 97956 bytes
 ).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
+ 89 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
