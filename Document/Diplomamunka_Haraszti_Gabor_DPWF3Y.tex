@@ -187,7 +187,44 @@
 	\noindent \\
 	A ROS-t számos nyelvbõl el lehet érni, , többek között C++, Python, lisp, Java, stb. környezetekbõl. Illetve rendelkezik egy csomag kezelõvel, amivel finomhangolható, hogy mely szoftverkomponensek legyenek felhasználva az adott ROS példányban. A ROS elsõdleges célja, hogy támogassa a kód újrafelhasználást a robotikai kutatásokban és fejlesztésekben \cite{ROS}. A ROS támogatja a moduláris, {\color{red}tool-based} fejlesztés filozófiáját a robo-tikában.\\
 	
-	A Springer kiber-fizikai architektúra tervezéssel foglalkozó cikke \cite{CPS} 
+	A Springer ROS és Docker alapú kiber-fizikai -- CPS, Cyber-Physical Systems -- architektúra tervezéssel foglalkozó cikke \cite{CPS} bevezetést nyújt általánosságban az ICT -- Information and Communication Technologies -- rendszerek tervezési aspektusaiba, legfõképpen az ipari és CPS felhasználások tekintetében, érintve a tervezõ rendszerektõl az Ipar 4.0-n át az IoT rendszerekig. Kitér a FOSS -- Free and Open-Source Systems -- rendszerek felhasználhatóságára, a ROS hasznára, mint a kód újrafelhasználhatóság és magas szintû integráció lehetõségére. \\
+	
+	A cikk foglalkozik a könnyûsúlyú virtualizációval, ezen belül is a Docker konténer technológiájával. Ez a szoftver nem kívánja meg, hogy minden egyes ROS példányhoz külön operációs rendszert is installálni kelljen, hanem egyugyanazon operációs rendszeren képes futtatni több ROS példányt is, ezzel erõforrásokat megtakarítva az adott gép hardware-én.\\
+	
+	Végül a cikk áttekinti a CPS rendszerek tervezésének hardware aspektusait, kezdve az egyszerû Raspberry Pi-tõl az ipari PLC-n át -- Programmable Logic Controller -- a PC-kig. Operációs rendszernek -- a PLC kivételével -- Linux-ot ajánl, valamint a ROS-t, mint middleware-t.\\
+	
+	A Springer Rosbridge-el fogglalkozó cikke \cite{Rosbridge} bemutatja a Rosbridge-et, mint a ROS egy köztes réteg absztrakciós szintjét, interfészt a nem ROS felhasználók felé. Lényegében a Rosbridge létrehoz a ROS szolgáltatásaihoz egy roxy-t, amit más környezetekbõl fel tudunk használni, ráadásul akár az internetrõl is, mert a tûzfalbarát WebSocket-et használja a kliensek felé.\\
+	
+	A cikk bemutatja a ROS-t is. Legfelül vannak az egymással üzeneteket váltó Node-ok, amik szervizekkel és topic-okkal kommunikálnak egymással. A szervizeket úgy kell elképzelni, mint távoli funkció hívásokat, míg a topic-ok olyan folyamatos adatfolyamok, melyekbe "bárki" beleírhat és melyek üzeneteire "bárki" feliratkozhat.\\
+	
+	A Rosbridge egy következõ absztrakciós szint a ROS-hoz képest. Képes igény szerint elindítani és leállítani ROS node-okat, a kommunikációt a kliensekkel pedig JSON formában bonyolítja. Lényegében bármely klienssel képes kommunikálni, amelyik "megérti" a JSON formátumot, Web alkalmazásokkal, vagy például Java, .NET szoftverekkel is. Nem csak HTML5 WebSocket-ekkel képes kommunikálni a klienseivel, hanem akár hagyományos POSIX IP socketekkel is. Kiadtak hozzá egy Javascript könyvtárat is a ROSJS-t, amit könnyen integrálni tudunk a Javascript-ben megírt programokhoz.\\
+	
+	A Cloudroid-al foglalkozó cikk \cite{Cloudroid} betekintést enged egy nyílt forráskódú felhõ keret-rendszerbe \cite{CloudroidWeb}, mely lehetõséget biztosít a meglévõ robotikai szoftverek számára, hogy felhõbe konvertálhatók legyenek, biztosítva számukra a teljes átalakítási transzparenciát az Internet-en elért felhõ szolgáltatás felhasználása mellett, a megfelelõ QoS -- Quality of Service -- biztosításával. A biztonságot növelõ megoldása, hogy ha hálózati hiba keletkezik képes a kliensnek legenerált Stub visszakapcsolni lokális hívásra, hogy ne akadjon meg végzetesen az elkezdett folyamat.\\
+	
+	A Cloudroid mögöttes technológiája a Rosbridge, annak absztrakciójára épül, hasonlóan, mint a Rapyuta publikus robotikai felhõ szolgáltató rendszere, mindketten megvalósítják a PaaS -- Platform as a Service -- infrastruktúra szolgáltatást. Bevezet négy mehanizmust:
+	 
+	\begin{description}
+		\item[Öntartalmazó VM csomag:] Amikor egy ROS csomagot migrálunk a felhõbe, akkor az nem lenne képes kommunikálni a ROS Master-el, így ilyenkor automatikusan becsomagolódik egy Docker konténerbe, ami tartalmazni fogja a mûködéshez szükséges összes többi ROS csomagot.\vspace{-9pt}
+		
+		\item[Felhõ bridging:] Az adoptált Rosbridge A ROS protokolját konvertálja JSON formátumúvá és WebSocket alapú protokollá..\vspace{-9pt}
+		
+		\item[Igény szerinti szolga példányosítás és szétosztás:] A Cloudroidban a szervizbõl két rész létezik: az interfész és a szolga, azaz egy Docker példány ami tartalmazza a ROS csomagot. Mivel a ROS egy robot kiszolgálására készült, ezért a Cloudroid minden kliens számára más-más Docker példányt készít.\vspace{-9pt}
+		
+		\item[Szolgáltatás Stub automatikus generálása:] A Cloudroid-on futó szolgáltatások elérhetõek bármely manuálisan megírt WebSocket kliensssel. Ezen túl a Cloudroid képes automatikusan legenerálni a szolgáltatás eléréséhez egy stub-ot, amivel kényelmesen elérhetõ lesz a szolgáltatás a kliensekrõl.\vspace{-9pt}
+		
+	\end{description}
+	
+	.\vspace{9pt}
+	
+	A Robot Web Tools-al foglalkozó cikk \cite{RWT} a nevezett, Rosbridge-re épülõ Javascript keretrendszerrel foglalkozik. A ROSJS mellett ez a másik feltörekvõ, bár kicsit más készletet tartalmazó, Rosbridge-re épülõ keretrendszer. Alapvetõen három részbõl tevõdik össze az RWT, a {\em roslibjs} egy kliens könyvtár, a {\em ros2djs} és a {\em ros3djs} pedig vizualizációs könyvtár. \\
+	
+	A {\em roslibjs} felhasználható bármely helyen mindenféle vizualizációs függõség nélkül. Egy kliens könyvtár, ami képes kommunikálni a ROS topic-okkal és szervizekkel. Tartalmaz továbbá eszközöket az alapvetõ robotikai feladatok ellátására, például transzfomációk, URDF -- Unified Robot Description Format -- parser és alapvetõ mátrix, vektor számítások.\\
+	
+	A {\em ros2djs} és a {\em ros3djs} vizualizációs könyvtárak a ROS-al összefüggõ adatokhoz -- az EaselJS és three.js továbbfejlesztései --, például robot modellek, vagy térképek, lézer letapogatások és pontfelhõk számára. Mindkét könyvtár HTML5 {\tt <canvas>} elemre rajzol.\\
+	
+	Az RWT-ben külön figyelmet fordítottak a streaming adatok megfelelõ kezelésére, például pontfelhõk folyamatos megjelenítésére. Az RWT vizualizációs része használja a HTML5 {\tt <video>} és {\tt <img>} elemeit a megjelenítésükhöz VP8 codec felhasználásával.\\
+	
+	Az IEEE konferencia elõadás anyaga \cite{Disaster} egy nagyszabású, katasztrófa keresési és mentési feladatokat ellátó nagyon összetett rendszer tervezésérõl szól, amit már csak a felhasznált felhõs és egyéb technológiák száma is bizonyít. Az IoT-tõl -- Internet of Things -- kezdõdõen, az RFID-n át -- Radio-Frequency Identification --, a különbözõ felhõ technológiákig, SaaS, PaaS, IaaS. Az esettanulmány a már említett technológiák -- úgy mint, ROS, virtualization, Rapyuta -- felhasználásával épít ki egy komplex, katasztrófa környezetben használható, felhõ alapú rendszert.\\
 	
 	\chapter{A megoldási módszer kiválasztása, a választás indoklása}
 	
@@ -229,6 +266,8 @@
 		\bibitem{RWT}Russell Toris, Julius Kammerl, David V. Lu, Jihoon Lee, Odest Chadwicke Jenkins, SarahOsentoski, Mitchell Wills, Sonia Chernova: Robot Web Tools: Efficient Messaging for Cloud Robotics, {\em {\color{red}hol jelent meg? Mikor és oldalszámok?}}\vspace{-9pt}
 		
 		\bibitem{Disaster}Carla Mouradian, Sami Yangui, Roch H. Glitho: Robots as-a-Service in Cloud Computing: Search and Rescue in Large-scale Disasters Case Study, {\em $15^{th}$ IEEE Consumer Communications and Networking Conference, Las Vegas, USA} 12-15 January 2018{\color{red}Konferencia anyagra jó így a hivatkozás?}\vspace{-9pt}
+		
+		\bibitem{CloudroidWeb} Cloudriod cloud robotic platform Website (https://github.com/cyberdb/Cloudroid), utoljára megtekintve: 2018.11.02.\vspace{-9pt}
 		
 	\end{thebibliography}
 

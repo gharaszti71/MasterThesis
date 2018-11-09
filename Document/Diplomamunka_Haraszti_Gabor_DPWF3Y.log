@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.31)  4 NOV 2018 16:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.31)  9 NOV 2018 20:14
 entering extended mode
 **./Diplomamunka_Haraszti_Gabor_DPWF3Y.tex
 (Diplomamunka_Haraszti_Gabor_DPWF3Y.tex
@@ -324,7 +324,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
 Non-PDF special ignored!
 <special> header=psfrag.pro
 
-{C:/Users/haras/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/gharaszti/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 121.
 
@@ -444,80 +444,160 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--189
 
  []
 
-[8] [9]
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+
+ []
+
+
+Overfull \hbox (0.31288pt too wide) in paragraph at lines 196--197
+\T1/ptm/m/n/12 egy köztes réteg ab-sz-trak-ciós sz-in-tjét, in-ter-fészt a nem 
+ROS fel-használók felé. Lényegében
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
+
+ []
+
+
+Overfull \hbox (4.11137pt too wide) in paragraph at lines 211--212
+[]\T1/ptm/m/n/12 A Cloudroid-ban a sz-ervizb®l két rész
+ []
+
+
+Overfull \hbox (20.16779pt too wide) in paragraph at lines 213--214
+[]\T1/ptm/m/n/12 A Cloudroid-on futó szol-gál-tatá-sok elérhet®ek
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+ []
+
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 223.
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+
+ []
+
+[11]
 5. fejezet.
-[10
-
-]
-6. fejezet.
-[11
-
-]
-7. fejezet.
 [12
 
 ]
-8. fejezet.
+6. fejezet.
 [13
 
 ]
-9. fejezet.
+7. fejezet.
 [14
 
 ]
-10. fejezet.
+8. fejezet.
 [15
 
 ]
-11. fejezet.
+9. fejezet.
 [16
 
 ]
-12. fejezet.
+10. fejezet.
 [17
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 219.
+11. fejezet.
+[18
+
+]
+12. fejezet.
+[19
+
+]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 256.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 219.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 256.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 219.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 256.
 
-Underfull \hbox (badness 1062) in paragraph at lines 225--226
+Underfull \hbox (badness 1062) in paragraph at lines 262--263
 []\T1/ptm/m/n/12 Docker lightweight con-tain-er en-gine (https://www.docker.com
 /products/docker-
  []
 
-[18
+[20
 
-]
+] [21]
 13. fejezet.
-[19
+[22
 
 ] (Diplomamunka_Haraszti_Gabor_DPWF3Y.aux) ) 
 Here is how much of TeX's memory you used:
- 4722 strings out of 492970
- 65941 string characters out of 3135854
- 153353 words of memory out of 3000000
- 8503 multiletter control sequences out of 15000+200000
- 34563 words of font info for 51 fonts, out of 3000000 for 9000
+ 4754 strings out of 492970
+ 66403 string characters out of 3135842
+ 153358 words of memory out of 3000000
+ 8530 multiletter control sequences out of 15000+200000
+ 35184 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,43p,625b,292s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,12n,43p,658b,389s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/
 enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/urw/times/utmri8a.pfb>
-Output written on Diplomamunka_Haraszti_Gabor_DPWF3Y.pdf (19 pages, 97956 bytes
-).
+Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/ut
+mri8a.pfb>
+Output written on Diplomamunka_Haraszti_Gabor_DPWF3Y.pdf (22 pages, 114695 byte
+s).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
+ 102 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
