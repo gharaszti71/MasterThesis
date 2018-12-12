@@ -1,15 +1,3 @@
-\select@language {magyar} \contentsline {chapter}{\numberline {1}R\"ovid tartalmi \"osszefoglal\'o a t\'ema ter\"ulet\'er\H ol, a feladatr\'ol}{3}
-\select@language {magyar} \contentsline {chapter}{\numberline {2}A megoldand\'o probl\'ema megfogalmaz\'asa}{4}
-\select@language {magyar} \contentsline {chapter}{\numberline {3}A probl\'ema fontoss\'aga, felvezet\'ese}{5}
-\select@language {magyar} \contentsline {chapter}{\numberline {4}Az irodalom alapj\'an a lehets\'eges megk\"ozel\IeC {\'\i }t\'esi m\'odok \'es megold\'asok \'attekint\'ese \'es elemz\'ese}{6}
-\select@language {magyar} \contentsline {section}{\numberline {4.1}Irodalmi \'attekint\'es}{6}
-\select@language {magyar} \contentsline {chapter}{\numberline {5}A megold\'asi m\'odszer kiv\'alaszt\'asa, a v\'alaszt\'as indokl\'asa}{12}
-\select@language {magyar} \contentsline {chapter}{\numberline {6}A r\'eszletes specifik\'aci\'o le\IeC {\'\i }r\'asa}{13}
-\select@language {magyar} \contentsline {chapter}{\numberline {7}A tervez\'es sor\'an v\'egzett munkaf\'azisok \'es tapasztalataik le\IeC {\'\i }r\'asa}{14}
-\select@language {magyar} \contentsline {chapter}{\numberline {8}A megval\'os\IeC {\'\i }t\'as le\IeC {\'\i }r\'asa}{15}
-\select@language {magyar} \contentsline {chapter}{\numberline {9}Tesztel\'es}{16}
-\select@language {magyar} \contentsline {chapter}{\numberline {10}Az eredm\'enyek bemutat\'asa, \'ert\'ekel\'ese, hasonl\'o rendszerek eredm\'enyeivel \"oszszevet\'ese}{17}
-\select@language {magyar} \contentsline {chapter}{\numberline {11}A megval\'os\IeC {\'\i }t\'as elemz\'ese, alkalmaz\'as\'anak \'es tov\'abbfejleszt\'esi lehet\H os\'egeinek sz\'ambav\'etele}{18}
-\select@language {magyar} \contentsline {chapter}{\numberline {12}A szakdolgozat tartalmi \"osszefoglal\'oja magyarul \'es angol nyelven}{19}
-\select@language {magyar} \contentsline {section}{Irodalomjegyz\'ek}{20}
-\select@language {magyar} \contentsline {chapter}{\numberline {13}Mell\'ekletek}{22}
+\select@language {magyar} \contentsline {chapter}{\numberline {1}Bevezet\'es}{3}
+\select@language {magyar} \contentsline {chapter}{\numberline {2}Irodalmi \'attekint\'es}{5}
+\select@language {magyar} \contentsline {section}{Irodalomjegyz\'ek}{11}

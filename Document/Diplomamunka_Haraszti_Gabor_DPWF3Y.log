@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.12.6)  12 DEC 2018 14:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.12.6)  12 DEC 2018 18:53
 entering extended mode
 **./Diplomamunka_Haraszti_Gabor_DPWF3Y.tex
 (Diplomamunka_Haraszti_Gabor_DPWF3Y.tex
@@ -304,25 +304,25 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 96.
-LaTeX Font Info:    Try loading font information for U+msa on input line 101.
+LaTeX Font Info:    Try loading font information for U+msa on input line 103.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 101.
+LaTeX Font Info:    Try loading font information for U+msb on input line 103.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 113.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 111.
  [1
 Non-PDF special ignored!
 <special> header=psfrag.pro
 
 {C:/Users/gharaszti/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 127.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 125.
 
 (Diplomamunka_Haraszti_Gabor_DPWF3Y.toc)
 \tf@toc=\write4
@@ -332,264 +332,313 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 
 ]
 1. fejezet.
-[3
 
-]
-2. fejezet.
-[4
-
-]
-3. fejezet.
-[5
-
-]
-4. fejezet.
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+ []
+
+[3
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Overfull \hbox (3.14043pt too wide) in paragraph at lines 152--152
+[]\T1/ptm/m/n/12 MUNKAKÖRNYEZET| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+[]\T1/ptm/m/n/12 Betanítás speciális fe-lada-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
+[]\T1/ptm/m/n/12 Robotok és em-berek
+ []
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 158--159
+[]\T1/ptm/m/n/12 Robotoknak és em-bereknek
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 158--159
+\T1/ptm/m/n/12 területen, hogy szol-gál-tatást
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
+[]\T1/ptm/m/n/12 Megbízásra ru-gal-masan
+ []
+
+
+Overfull \hbox (7.54724pt too wide) in paragraph at lines 147--163
+[][] 
+ []
+
+
+Overfull \hbox (6.03255pt too wide) in paragraph at lines 167--168
+\T1/ptm/m/n/12 böz® szoftver ar-chitek-túra irányokat és egy kísér-leti -- Proo
+f of Con-cept (PoC) -- környezetet
+ []
+
+
+Overfull \hbox (1.70415pt too wide) in paragraph at lines 167--168
+\T1/ptm/m/n/12 kiépítése a megoldá-sok mérnö-ki és tu-dományos vizs-gálatához. 
+A meg-valósítás-nál töreked-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
+
+ []
+
+[4]
+2. fejezet.
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
-[6
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+
+ []
+
+[5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
-
- []
-
-
-Overfull \hbox (2.07805pt too wide) in paragraph at lines 155--156
+Overfull \hbox (2.07805pt too wide) in paragraph at lines 185--186
 \T1/ptm/m/n/12 cióra, mint például a pil-lanat-nyi ál-lapot, vagy az al-ka-lmaz
 ás bel-s® ál-lapota. M¶ködésükhöz
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
 
-Overfull \hbox (4.96704pt too wide) in paragraph at lines 157--158
+Overfull \hbox (4.96704pt too wide) in paragraph at lines 187--188
 []\T1/ptm/b/n/12 Contextful: \T1/ptm/m/n/12 azaz ál-lapot füg-g® szol-gál-tatá-
 sok-nak szük-ségük van in-for-má-cióra a tár-gyrend-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
-
- []
-
-
-Overfull \hbox (13.0283pt too wide) in paragraph at lines 192--193
+Overfull \hbox (13.0283pt too wide) in paragraph at lines 226--227
 []\T1/ptm/m/n/12 Christopher Crick és munkatár-sai Rosbridge-el fog-glalkozó ci
 kke [[]] be-mu-tat-ja a Rosbridge-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
 
-Overfull \hbox (4.11137pt too wide) in paragraph at lines 207--208
+Overfull \hbox (4.11137pt too wide) in paragraph at lines 241--242
 []\T1/ptm/m/n/12 A Cloudroid-ban a sz-ervizb®l két rész
  []
 
 
-Overfull \hbox (20.16779pt too wide) in paragraph at lines 209--210
+Overfull \hbox (20.16779pt too wide) in paragraph at lines 243--244
 []\T1/ptm/m/n/12 A Cloudroid-on futó szol-gál-tatá-sok elérhet®ek
  []
 
 
-Overfull \hbox (11.22942pt too wide) in paragraph at lines 215--216
+Overfull \hbox (11.22942pt too wide) in paragraph at lines 249--250
 []\T1/ptm/m/n/12 Russell Toris és munkatár-sai Robot Web Tools-al foglalkozó ci
 kke [[]] a nevezett, Rosbridge-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
-[10]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 219.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 253.
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
 
-
-Overfull \hbox (0.18942pt too wide) in paragraph at lines 221--222
+[9]
+Overfull \hbox (0.18942pt too wide) in paragraph at lines 255--256
 []\T1/ptm/m/n/12 Az RWT-ben külön fi-gyel-met fordí-tot-tak a stream-ing ada-to
 k megfelel® kezelésére, például
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
-[11]
-5. fejezet.
-[12
-
-]
-6. fejezet.
-[13
-
-]
-7. fejezet.
-[14
-
-]
-8. fejezet.
-[15
-
-]
-9. fejezet.
-[16
-
-]
-10. fejezet.
-[17
-
-]
-11. fejezet.
-[18
-
-]
-12. fejezet.
-[19
-
-]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 252.
+[10]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 271.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 252.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 271.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 252.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 271.
 
-Underfull \hbox (badness 1062) in paragraph at lines 258--259
+Underfull \hbox (badness 1062) in paragraph at lines 277--278
 []\T1/ptm/m/n/12 Docker lightweight con-tain-er en-gine (https://www.docker.com
 /products/docker-
  []
 
-[20
+[11
 
-] [21]
-13. fejezet.
-[22
+]
+Underfull \hbox (badness 3942) in paragraph at lines 287--288
+[]\T1/ptm/m/n/12 Dr. Sz-abó Zsolt, Bu-dai Csa-ba, Dr. Kovács Lás-zló, Dr. Lipov
+sz-ki Györ-
+ []
 
-] (Diplomamunka_Haraszti_Gabor_DPWF3Y.aux) ) 
+
+Underfull \hbox (badness 7379) in paragraph at lines 287--288
+\T1/ptm/m/n/12 gy: Robot-mech-a-niz-mu-sok Web site tananyag, robotok cso-por-t
+osítása fe-
+ []
+
+[12] (Diplomamunka_Haraszti_Gabor_DPWF3Y.aux) ) 
 Here is how much of TeX's memory you used:
- 4760 strings out of 492969
- 66439 string characters out of 3135835
- 153371 words of memory out of 3000000
- 8537 multiletter control sequences out of 15000+200000
+ 4761 strings out of 492969
+ 66450 string characters out of 3135835
+ 154376 words of memory out of 3000000
+ 8538 multiletter control sequences out of 15000+200000
  35184 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,43p,679b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/
-enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/ut
-mri8a.pfb>
-Output written on Diplomamunka_Haraszti_Gabor_DPWF3Y.pdf (22 pages, 113717 byte
+ 41i,12n,43p,743b,387s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fon
+ts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times
+/utmri8a.pfb>
+Output written on Diplomamunka_Haraszti_Gabor_DPWF3Y.pdf (12 pages, 109646 byte
 s).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
+ 70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

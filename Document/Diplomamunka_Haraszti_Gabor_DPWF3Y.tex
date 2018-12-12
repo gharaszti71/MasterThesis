@@ -97,8 +97,6 @@
 	
 		\vspace*{10cm}
 		
-		%Kérés
-		{\color{red}A kezdõlapra mindenféle címer kell. Van \LaTeX minta rá?}
 		\vspace*{1cm}
 		
 		%Értelemszerûen megváltoztatandó:
@@ -118,7 +116,7 @@
 			Budapest
 			\\
 			\vspace{2mm}
-			2012
+			2019
 		}
 	\end{center}
 	
@@ -127,19 +125,51 @@
 	\tableofcontents
 	
 	
-	\chapter{Rövid tartalmi összefoglaló a téma területérõl, a feladatról}
+	\chapter{Bevezetés}
 	
-	\chapter{A megoldandó probléma megfogalmazása}
+	A felhõ technológia mára már a mindennapok részévé vált az információ technológiát felhasználó cégeknél. Számos elõnyt jelent a felhasználók számára, de leginkább olcsón üzemeltethetõ és rugalmasan méretezhetõ infrastruktúrát tud a megfelelõ biztonsággal biztosítani. Mindezt bérleti konstrukcióban szolgáltatja a beruházási konstrukcióval szemben, mely költséghatékonyabb a cégek számára.\\
 	
-	\chapter{A probléma fontossága, felvezetése}
+	Több területen is fel tudják a cégek használni, az intranetes rendszereiktõl kezdve az internetes megjelenést biztosító rendszereken át a partnerek felé nyitott extranetes megoldásokig. A felhõ technológiák fontosságát jól jelzik, hogy nélkülük nem létezhetnének azok a mára már természetesnek vett szolgáltatások az Interneten, amiket százmilliók, milliárdok vesznek igénybe nap mint nap, nélkülük nem lehetne kiszolgálni a 3 milliárd Internet felhasználót.\\
 	
+	Manapság már az Interneten megjelenõ új adatok több, mint 80\%-a nem emberi kéz által létrehozott adat, a felhasznált rendszerek generálják azokat, beleértve az ipari rendszerek által létrehozott adatmennyiséget, az egyre terjedõ IoT alkalmazásokon át az egyéb kiberfizikai rendszerek által kibocsátott adatokig. Fontos tényezõ lett a hatalmas adatvagyon -- big data -- elemzése, ami nem létezhetne a felhõk számítási és adattárolási kapacitása nélkül. Manapság már a gyárak, ipari üzemek sem nélkülözhetik a felhõ technológiák használatát, a robotrendszereken és szenzorokon keletkezett adatok alapján jobb rugalmassággal tudják az adatokat feldolgozni és vezérelni a gyártás folyamatot.\\
 	
-	\chapter{Az irodalom alapján a lehetséges megközelítési módok és megoldások áttekintése	és elemzése}
+	Fontos felhasználási területe lesz a felhõ szolgáltatásoknak a szolgáltató robotok. Jelenleg ugyan elenyészõ a számarányuk az ipari robotokhoz képest, viszont a jövõben ez jelentõsen változni fog -- egyes becslések szerint a 2015-ös 22\%-ról 2025-re 66\%-ot várnak --. Az ISO 13482-es szabvány szerint az ipari és szolgáltató robotoknak a definíciója:
 	
-	A munka megkezdése elõtt célszerû tájékozódni a probléma lehetséges megoldásairól a szakirodalomban, ami után a megoldási alternatívák már ki tudnak rajzolódni és lehetséges lesz szakmailag megalapozott javaslat megfogalmazására.
+	\begin{description}
+		\item[ipari robot:] Az ipari robot egy automatikus irányítású, újraprogramozható, többcélú automatikus ipari feladatok elvégzésére használt manipulátor, három vagy több tengelye programozható, melyek lehetnek rögzítettek vagy mobilak.\vspace{-9pt}
+		\item[szolgáltató robot:] Olyan robot, amely hasznos feladatokat hajt végre emberek vagy berendezések számára, kivéve az ipari automatizáló berendezéseket.\vspace{-9pt}
+	\end{description}
+
+	\bigskip
+
+	Mint látható a megfogalmazásból a szolgáltató robotok definíciója elég tág, ezért érdemes pár egyéb szempont szerint is megvizsgálni, ami a Robotmechanizmusok tankönyv \cite{RobotCsop} tananyaga szerint a következõ:\\
 	
-	\section{Irodalmi áttekintés}
+	\begin{tabular}{ | p{4cm} | p{5cm} | p{5cm} | }
+		\hline
+		& IPARI ROBOTOK & SZOLGÁLTATÓ ROBOTOK \\
+		\hline
+		\hline
+		MUNKAKÖRNYEZET &  Ellenõrzött és jól meghatározott környezet & Rendezetlenebb, nehezebben definiálható környezet \\
+		\hline
+		FELHASZNÁLÓK & Betanítás speciális feladatokra & A betanítás a tevékenységek széleskörû skáláját öleli fel \\
+		\hline
+		BIZTONSÁG & Gépfüggõ & Robot és felhasználófüggõ \\
+		\hline
+		MUNKAFILOZÓFIA & Robotok és emberek elkülönítése & Robotoknak és embereknek meg kell osztozniuk a munka-területen, hogy szolgáltatást nyújtsanak/kapjanak \\
+		\hline
+		GÉP TERVEZÉSE & Megbízásra rugalmasan reagál & Igényre rugalmasan reagál \\
+		\hline
+	\end{tabular}
+
+	\bigskip
+	\bigskip
 	
+	A diplomamunka feladat fõ célja, hogy az ipari robotika igényei mentén feltárja a különbözõ szoftver architektúra irányokat és egy kísérleti -- Proof of Concept (PoC) -- környezetet kiépítése a megoldások mérnöki és tudományos vizsgálatához. A megvalósításnál törekedni kell az elterjedt nyílt forráskódú technológiák használatára.\\
+	
+	\chapter{Irodalmi áttekintés}
+	
+	A munka megkezdése elõtt célszerû tájékozódni a probléma lehetséges megoldásairól a hazai és nemzetközi szakirodalomban, ami után a megoldási alternatívák már ki tudnak rajzolódni és lehetséges lesz szakmailag megalapozott javaslat megfogalmazására.\\
+
 	Galambos Péter cikkébõl \cite{GP_Cloud} megtudhatjuk, hogy habár sokáig megfelelt a robotikában a helyi kontrollerekrõl vezérelni a robotokat, a manapság szükséges számítási kapacitás igénynek ez már nem felel meg. Az új kihívások szükségessé teszik külsõ erõforrások bevonását is a munkába. A kapacitás bõvítésnek több módja is van a lokális szerverektõl a publikus felhõ szolgáltatásokig bezárólag. A cikk bemutatja a hagyományos IT területtõl némileg eltérõ robotikai alkalmazások szükségleteit a felhõ szolgáltatásokban.\\
 	
 	Elõször ismertetésre kerülnek a fõbb paradigmák a robotika kontextusában:\\
@@ -164,7 +194,7 @@
 	
 	Fontos részlet -- fõleg a gyártás számára --, hogy a robotrendszerek energia hatékony módon dolgozzanak, amiben szintén nélkülözhetetlen lehet a felhõ szerepe, de fontos lehet olyan helyzetekben is, amikor az energiavételezés lehetõségei korlátozottak. Az energia-optimalizált mûködés fontos szerepet játszik a zöld-felhasználásban, nem csak a gyártás területén.\\
 	
-	Adarsha Kharel és munkatársai cikke \cite{ROS_Cloud} a ROS alapú felhõ-robotikával foglalkozik. Elõször is fogalmakat tisztáz. Az operációs rendszer és a robotikai alkalmazások között definiál egy réteget, a "Robotic middleware"-t, mely az alkalmazások elõl elfedi a hardware és OS rétegeket, így egyszerûvé téve a robotikai fejlesztéseket és olcsóbbá téve azt. A ROS \cite{ROS} -- Robot Operating System -- egy nyílt forráskódú "meta-operációs rendszer", ami biztosítja a
+	Adarsha Kharel és munkatársai cikke \cite{ROS_Cloud} a ROS alapú felhõ-robotikával foglalkozik. Elõször is fogalmakat tisztáz. Az operációs rendszer és a robotikai alkalmazások között definiál egy réteget, a "Robotic middleware"-t, mely az alkalmazások elõl elfedi a hardware és OS rétegeket, így egyszerûvé téve a robotikai fejlesztéseket és olcsóbbá téve azt. A ROS \cite{ROS} -- Robot Operating System -- egy nyílt forráskódú "meta-operációs rendszer", ami biztosítja a\\
 	
 	\begin{itemize}
 		\item Hardware abstrakciót\vspace{-9pt}
@@ -172,6 +202,8 @@
 		\item Üzenet továbbítást\vspace{-9pt}
 		\item Csomag menedzsmentet\vspace{-9pt}
 	\end{itemize}
+
+	\bigskip
 	
 	A cikk leírja a ROS alapfogalmait, részeit. Alapvetõ egység a Node, ami reprezentálja a ROS-on belül a felületet a programok felé. Egy ROS példány több Node-ot is indíthat. Az egyes Node-ok tartalmazzák azután a kétféle ROS szolgáltatás típust és a message-eket. 
 	
@@ -181,7 +213,9 @@
 		\item[topic] A Node-ok fel tudnak iratkozni topic-okra és maguk is tudnak kiajánlani topic-okat -- megvalósítva az informatikában jól ismert publisher/subscriber mintát --. Egy topic-ba több node is írhat (publish) és több node is olvashat (subscrbe) belõle. \vspace{-9pt}
 	\end{description}
 
-	A ROS-t számos nyelvbõl el lehet érni, , többek között C++, Python, lisp, Java, stb. környezetekbõl. Illetve rendelkezik egy csomag kezelõvel, amivel finomhangolható, hogy mely szoftverkomponensek legyenek felhasználva az adott ROS példányban. A ROS elsõdleges célja, hogy támogassa a kód újrafelhasználást a robotikai kutatásokban és fejlesztésekben \cite{ROS}. A ROS támogatja a moduláris, {\color{red}tool-based} fejlesztés filozófiáját a robo-tikában.\\
+	\bigskip
+	
+	A ROS-t számos nyelvbõl el lehet érni, , többek között C++, Python, lisp, Java, stb. környezetekbõl. Illetve rendelkezik egy csomag kezelõvel, amivel finomhangolható, hogy mely szoftverkomponensek legyenek felhasználva az adott ROS példányban. A ROS elsõdleges célja, hogy támogassa a kód újrafelhasználást a robotikai kutatásokban és fejlesztésekben \cite{ROS}. A ROS támogatja a moduláris, "tool-based" fejlesztés filozófiáját a robo-tikában.\\
 	
 	Pablo González-Nalda és munkatársai ROS és Docker alapú kiber-fizikai -- CPS, Cyber-Physical Systems -- architektúra tervezéssel foglalkozó cikke \cite{CPS} bevezetést nyújt általánosságban az ICT -- Information and Communication Technologies -- rendszerek tervezési aspektusaiba, legfõképpen az ipari és CPS felhasználások tekintetében, érintve a tervezõ rendszerektõl az Ipar 4.0-n át az IoT rendszerekig. Kitér a FOSS -- Free and Open-Source Systems -- rendszerek felhasználhatóságára, a ROS hasznára, mint a kód újrafelhasználhatóság és magas szintû integráció lehetõségére. \\
 	
@@ -222,21 +256,6 @@
 	
 	Carla Mouradian és munkatársai cikke \cite{Disaster} egy nagyszabású, katasztrófa keresési és mentési feladatokat ellátó nagyon összetett rendszer tervezésérõl szól, amit már csak a felhasznált felhõs és egyéb technológiák száma is bizonyít. Az IoT-tõl -- Internet of Things -- kezdõdõen, az RFID-n át -- Radio-Frequency Identification --, a különbözõ felhõ technológiákig, SaaS, PaaS, IaaS. Az esettanulmány a már említett technológiák -- úgy mint, ROS, virtualization, Rapyuta -- felhasználásával épít ki egy komplex, katasztrófa környezetben használható, felhõ alapú rendszert.\\
 	
-	\chapter{A megoldási módszer kiválasztása, a választás indoklása}
-	
-	\chapter{A részletes specifikáció leírása}
-	
-	\chapter{A tervezés során végzett munkafázisok és tapasztalataik leírása}
-	
-	\chapter{A megvalósítás leírása}
-	
-	\chapter{Tesztelés}
-	
-	\chapter{Az eredmények bemutatása, értékelése, hasonló rendszerek eredményeivel öszszevetése}
-	
-	\chapter{A megvalósítás elemzése, alkalmazásának és továbbfejlesztési lehetõségeinek számbavétele}
-	
-	\chapter{A szakdolgozat tartalmi összefoglalója magyarul és angol nyelven}
 
 	\begin{thebibliography}{99}
 		% 10-nél több hivatkozás esetén
@@ -249,7 +268,7 @@
 		
 		\bibitem{ROS} Robot Operating System (http://www.ros.org/about-ros/), utoljára megtekintve: 2018.11.02.\vspace{-9pt}
 		
-		\bibitem{ROS_Cloud}Adarsha Kharel, Dorjee Bhutia, Sunita Rai, Dhruba Ningombam: Cloud Robotics using ROS, {\em International Journal of Computer Applications \textregistered} ~(IJCA) (0975 ? 8887),	{\em National Conference cum Workshop on Bioinformatics and Computational Biology}, NCWBCB- 2014, pp.18-21. {\color{red}Jó így a hivatkozás?}\vspace{-9pt}
+		\bibitem{ROS_Cloud}Adarsha Kharel, Dorjee Bhutia, Sunita Rai, Dhruba Ningombam: Cloud Robotics using ROS, {\em International Journal of Computer Applications \textregistered} ~(IJCA) (0975 ? 8887),	{\em National Conference cum Workshop on Bioinformatics and Computational Biology}, NCWBCB- 2014, pp.18-21.\vspace{-9pt}
 		
 		\bibitem{CPS}Pablo González-Nalda, Ismael Etxeberria-Agiriano, Isidro Calvo: A modular CPS architecture design based on ROS and Docker, {em \copyright Springer-Verlag France}, 2016, pp.950-955.\vspace{-9pt}
 			
@@ -257,16 +276,16 @@
 			
 		\bibitem{Docker}Docker lightweight container engine (https://www.docker.com/products/docker-engine), utoljára megtekintve: 2018.11.02.\vspace{-9pt}
 		
-		\bibitem{Cloudroid}Ben Hu, Huaimin Wang, Pengfei Zhang, Bo Ding, Huimin Che: Cloudroid: A Cloud Framework for Transparent and QoS-aware Robotic Computation Outsourcing, {\em {\color{red}Hol jelent meg? Oldalszám?}} 2017, \vspace{-9pt}
+		\bibitem{Cloudroid}Ben Hu, Huaimin Wang, Pengfei Zhang, Bo Ding, Huimin Che: Cloudroid: A Cloud Framework for Transparent and QoS-aware Robotic Computation Outsourcing, {\em IEEE 10th International Conference on Cloud Computing} 25-30 June 2017, pp.114--121 \vspace{-9pt}
 
-		\bibitem{RWT}Russell Toris, Julius Kammerl, David V. Lu, Jihoon Lee, Odest Chadwicke Jenkins, SarahOsentoski, Mitchell Wills, Sonia Chernova: Robot Web Tools: Efficient Messaging for Cloud Robotics, {\em {\color{red}hol jelent meg? Mikor és oldalszámok?}}\vspace{-9pt}
+		\bibitem{RWT}Russell Toris, Julius Kammerl, David V. Lu, Jihoon Lee, Odest Chadwicke Jenkins, SarahOsentoski, Mitchell Wills, Sonia Chernova: Robot Web Tools: Efficient Messaging for Cloud Robotics, {\em 2015 IEEE/RSJ International Conference on Intelligent Robots and Systems} 2015-09, pp.4530--4537 \vspace{-9pt}
 		
-		\bibitem{Disaster}Carla Mouradian, Sami Yangui, Roch H. Glitho: Robots as-a-Service in Cloud Computing: Search and Rescue in Large-scale Disasters Case Study, {\em $15^{th}$ IEEE Consumer Communications and Networking Conference, Las Vegas, USA} 12-15 January 2018{\color{red}Konferencia anyagra jó így a hivatkozás?}\vspace{-9pt}
+		\bibitem{Disaster}Carla Mouradian, Sami Yangui, Roch H. Glitho: Robots as-a-Service in Cloud Computing: Search and Rescue in Large-scale Disasters Case Study, {\em $15^{th}$ IEEE Consumer Communications and Networking Conference, Las Vegas, USA} 12-15 January 2018, pp.1--7 \vspace{-9pt}
 		
 		\bibitem{CloudroidWeb} Cloudriod cloud robotic platform Website (https://github.com/cyberdb/Cloudroid), utoljára megtekintve: 2018.11.02.\vspace{-9pt}
 		
+		\bibitem{RobotCsop} Dr. Szabó Zsolt, Budai Csaba, Dr. Kovács László, Dr. Lipovszki György: Robotmechanizmusok Web site tananyag, robotok csoportosítása fejezet (http://www.mogi.bme.hu/TAMOP/robotmechanizmusok/ch14.html), utoljára megtekintve: 2018.12.12.\vspace{-9pt}
+		
 	\end{thebibliography}
-
-	\chapter{Mellékletek}
 	
 \end{document}
