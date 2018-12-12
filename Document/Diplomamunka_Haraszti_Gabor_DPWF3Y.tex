@@ -24,6 +24,7 @@
 %ha nincs rájuk szükség természetesen kihagyhatók.
 \usepackage{graphicx}
 \usepackage{psfrag}
+\usepackage{epsfig}
 
 % X11 színek
 \usepackage{xcolor}
@@ -127,13 +128,13 @@
 	
 	\chapter{Bevezetés}
 	
-	A felhõ technológia mára már a mindennapok részévé vált az információ technológiát felhasználó cégeknél. Számos elõnyt jelent a felhasználók számára, de leginkább olcsón üzemeltethetõ és rugalmasan méretezhetõ infrastruktúrát tud a megfelelõ biztonsággal biztosítani. Mindezt bérleti konstrukcióban szolgáltatja a beruházási konstrukcióval szemben, mely költséghatékonyabb a cégek számára.\\
+	A felhõ technológia mára már a mindennapok részévé vált az információ technológiát felhasználó cégeknél. Számos elõnyt jelent a felhasználók számára, de leginkább olcsón üzemeltethetõ és rugalmasan méretezhetõ infrastruktúrát ad a megfelelõ biztonsággal. Mindezt bérleti konstrukcióban szolgáltatja a beruházási konstrukcióval szemben, mely költséghatékonyabb a cégek számára.\\
 	
 	Több területen is fel tudják a cégek használni, az intranetes rendszereiktõl kezdve az internetes megjelenést biztosító rendszereken át a partnerek felé nyitott extranetes megoldásokig. A felhõ technológiák fontosságát jól jelzik, hogy nélkülük nem létezhetnének azok a mára már természetesnek vett szolgáltatások az Interneten, amiket százmilliók, milliárdok vesznek igénybe nap mint nap, nélkülük nem lehetne kiszolgálni a 3 milliárd Internet felhasználót.\\
 	
 	Manapság már az Interneten megjelenõ új adatok több, mint 80\%-a nem emberi kéz által létrehozott adat, a felhasznált rendszerek generálják azokat, beleértve az ipari rendszerek által létrehozott adatmennyiséget, az egyre terjedõ IoT alkalmazásokon át az egyéb kiberfizikai rendszerek által kibocsátott adatokig. Fontos tényezõ lett a hatalmas adatvagyon -- big data -- elemzése, ami nem létezhetne a felhõk számítási és adattárolási kapacitása nélkül. Manapság már a gyárak, ipari üzemek sem nélkülözhetik a felhõ technológiák használatát, a robotrendszereken és szenzorokon keletkezett adatok alapján jobb rugalmassággal tudják az adatokat feldolgozni és vezérelni a gyártás folyamatot.\\
 	
-	Fontos felhasználási területe lesz a felhõ szolgáltatásoknak a szolgáltató robotok. Jelenleg ugyan elenyészõ a számarányuk az ipari robotokhoz képest, viszont a jövõben ez jelentõsen változni fog -- egyes becslések szerint a 2015-ös 22\%-ról 2025-re 66\%-ot várnak --. Az ISO 13482-es szabvány szerint az ipari és szolgáltató robotoknak a definíciója:
+	Fontos felhasználási területe lesz a felhõ szolgáltatásoknak a szolgáltató robotok. Jelenleg ugyan elenyészõ a számarányuk az ipari robotokhoz képest, viszont a jövõben ez jelentõsen változni fog -- egyes becslések szerint a 2015-ös 22\%-ról 2025-re 66\%-ot várnak --. Az ISO 13482-es szabvány szerint az ipari és szolgáltató robotoknak a definíciója:\\
 	
 	\begin{description}
 		\item[ipari robot:] Az ipari robot egy automatikus irányítású, újraprogramozható, többcélú automatikus ipari feladatok elvégzésére használt manipulátor, három vagy több tengelye programozható, melyek lehetnek rögzítettek vagy mobilak.\vspace{-9pt}
@@ -142,7 +143,7 @@
 
 	\bigskip
 
-	Mint látható a megfogalmazásból a szolgáltató robotok definíciója elég tág, ezért érdemes pár egyéb szempont szerint is megvizsgálni, ami a Robotmechanizmusok tankönyv \cite{RobotCsop} tananyaga szerint a következõ:\\
+	Mint látható a megfogalmazásból a szolgáltató robotok definíciója elég tág, ezért érdemes pár egyéb szempont szerint is megvizsgálni, ami a Robotmechanizmusok tankönyv \cite{RobotCsop} szerint a következõ:\\
 	
 	\begin{tabular}{ | p{4cm} | p{5cm} | p{5cm} | }
 		\hline
@@ -164,7 +165,9 @@
 	\bigskip
 	\bigskip
 	
-	A diplomamunka feladat fõ célja, hogy az ipari robotika igényei mentén feltárja a különbözõ szoftver architektúra irányokat és egy kísérleti -- Proof of Concept (PoC) -- környezetet kiépítése a megoldások mérnöki és tudományos vizsgálatához. A megvalósításnál törekedni kell az elterjedt nyílt forráskódú technológiák használatára.\\
+	A diplomamunka feladat fõ célja, hogy az ipari robotika igényei mentén feltárja a felhõ technológiákat felhasználó különbözõ szoftver architektúra irányokat és egy kísérleti PoC\footnote{Proof of Concept} környezetet kiépítése a megoldások mérnöki és tudományos vizsgálatához. A megvalósításnál törekedni kell az elterjedt nyílt forráskódú technológiák használatára.\\
+	
+	A feladatnak meg kell valósítania különbözõ környezetekben egy példa alkalmazást, egy pályatervezési feladatot. A felépítendõ rendszer része lesz egy robot a maga környezetével, helyi szerver számítógép, valamint több felhõ rendszer is, úgy mint a Microsoft Azure és Amazon AWS rendszere. Külön említést érdemel a Rapyuta\cite{Rapyuta} specifikus robot felhõ szolgáltatásának vizsgálata is.\\
 	
 	\chapter{Irodalmi áttekintés}
 	
@@ -256,11 +259,34 @@
 	
 	Carla Mouradian és munkatársai cikke \cite{Disaster} egy nagyszabású, katasztrófa keresési és mentési feladatokat ellátó nagyon összetett rendszer tervezésérõl szól, amit már csak a felhasznált felhõs és egyéb technológiák száma is bizonyít. Az IoT-tõl -- Internet of Things -- kezdõdõen, az RFID-n át -- Radio-Frequency Identification --, a különbözõ felhõ technológiákig, SaaS, PaaS, IaaS. Az esettanulmány a már említett technológiák -- úgy mint, ROS, virtualization, Rapyuta -- felhasználásával épít ki egy komplex, katasztrófa környezetben használható, felhõ alapú rendszert.\\
 	
+	\chapter{Felhasznált technológiák bemutatása}
+	
+	A diplomamunka feladat által megvalósítandó PoC környezet kiépítéséhez több technológiát is meg kellett vizsgálni, mint lehetséges alternatívákat és a munkához megfele-lõket ki kellett választani. A kialakítandó rendszerben használni kell majd saját szervereken futó virtualizációs környezeteket, leginkább konténer technológiával, futtatni kell HTTP szervereket, valamint ROS példányokat. A rendszer részei lesznek az Amazon AWS és Microsoft Azure felhõ szolgáltatók által nyújtott virtualizációs és funkcionális szolgáltatásai is. \\
+	
+	\section{Operációs rendszer}
+
+	A részletes feladatkiírásnak megfelelõen elsõsorban a nyílt forrású operációs rendszereket vettem számításba. A kereskedelmi Windows változatok teljesen kizáródtak a választásból, mert rajtuk nem fut a ROS \cite{ROS}. Az open source operációs rendszerek közül a ROS által támogatottak tipikusan azok, melyek a Debian\cite{debian} platform csomagkezelõ szolgáltatásait használják. Pillanatnyilag a két támogatott -- Linux alapú, debian rendszerû -- operációs rendszer az Ubuntu Wily (15.10-es verzió), az Ubuntu Xenial (16.04-es verzió) és Debian Jessie (8-as verzió). Jelenleg ezek már mind elavult verziók, az Ubuntu LTS\footnote{LTS - Long Term Support (hosszútávú támogatás)} a 18.10-es verziónál tart, míg a Debian a 9.4.0 verziónál.\\
+	
+	A választás másik aspektusa, hogy az említett felhõ szolgáltatóknál mely Linux verziók támogatottak a háromból. A Microsoft Azure az Ubuntu Server 16.04 LTS verzióját, valamint a Debian 8 Jessie verziót is, azaz kettõt is a ROS platformjai közül. Az Amazon AWS szintén támogatja a Debian 8 Jessie verzióját, valamint az Ubuntu 16.04 LTS-t is.\\
+	
+	Az operációs rendszer kiválasztásánál a követelményeknek megfelel mind az Ubuntu 16.04 Xenial, mind a Debian 8 Jessie, így a döntést a Robot laborban meglévõ szokások és tudás dönti el. A kollégák, akik majd a PoC rendszeren fognak dolgozni és a késõbbiekben fel tudják építeni belõle a saját magukra hangolt rendszert, inkább az Ubuntu szoftveréhez értenek, így a választásom is erre esett, azaz \textbf{Ubuntu 16.04 LTS Server}\\
+	
+	\section{Virtualizációs technológia}
+	
+	A virtualizáció alatt általában azt értjük, ha egy fizikai számítógépen egyszerre több, egymástól független, izolált operációs rendszert tudunk futtatni, feléjük emulált virtuális számítógépet mutatva. Az izolációval el tudjuk érni, hogy az egyes operációs rendszerek ne tudjanak még végzetes hiba esetén se egymásra hatni, illetve a virtualizáció miatt a fizikai számítógép erõforrásait -- processzor, RAM, disk, egyéb IO -- is optimálisabban, a szükségleteknek megfelelõen tudjuk szétosztani az operációs rendszerek között.\\
+	
+	Manapság már a virtualizáció jelentése kibõvült a konténer technológiákkal is. \\
+	
+	https://www.refaktor.hu/docker-a-kontener-alapu-virtualizacio-1-resz/ \\
+	
+	\includegraphics[width=12cm]{container-vs-vm.eps}\\
+	
+	A PoC-hoz szükséges lesz valamely virtualizációs technológia használata, ahol a fenti operációs rendszereken virtualizálva tudjuk majd futtatni a ROS példányokat. Alapvetõen kétféle virtualizáció lehetséges. Vagy minden egyes ROS példánynak allokálunk egy gazda-gépen futó, komplett vendég operációs rendszert, ami megfelel a hagyományos virtualizációs technológianák, vagy pedig valami konténer technológát használunk. A ROS követelményeit áttekintve a feladat nem igényel feltétlenül nehézsúlyú megoldást, ezért a Docker konténer technolófiáját választottam.\\
 
 	\begin{thebibliography}{99}
 		% 10-nél több hivatkozás esetén
 		
-		\addcontentsline{toc}{section}{Irodalomjegyzék}
+		\addcontentsline{toc}{chapter}{Irodalomjegyzék}
 		
 		\bibitem{GP_Cloud}Péter Galambos: Cloud-, Fog-, and Mist Computing in Service of Advanced Robot Applications, {\em {\color{red} ide be kell irni majd, hogy GP cikke hol jelent meg!}}, 1969, pp.111-222.\vspace{-9pt}
 		
@@ -285,6 +311,12 @@
 		\bibitem{CloudroidWeb} Cloudriod cloud robotic platform Website (https://github.com/cyberdb/Cloudroid), utoljára megtekintve: 2018.11.02.\vspace{-9pt}
 		
 		\bibitem{RobotCsop} Dr. Szabó Zsolt, Budai Csaba, Dr. Kovács László, Dr. Lipovszki György: Robotmechanizmusok Web site tananyag, robotok csoportosítása fejezet (http://www.mogi.bme.hu/TAMOP/robotmechanizmusok/ch14.html), utoljára megtekintve: 2018.12.12.\vspace{-9pt}
+		
+		\bibitem{debian}Debian operációs rendszer (https://www.debian.org/), utoljára megtekintve: 2018.12.12.\vspace{-9pt}
+		
+		\bibitem{ubuntu}Ubuntu operációs rendszer (https://www.ubuntu.com/), utoljára megtekintve: 2018.12.12.\vspace{-9pt}
+		
+		\bibitem{Rapyuta}ROS-t és Cloudroid-ot felhasználó specifikus robot-felhõ szolgáltató (https://www.rapyuta-robotics.com/), utoljára megtekintve: 2018.12.12.\vspace{-9pt}
 		
 	\end{thebibliography}
 	
