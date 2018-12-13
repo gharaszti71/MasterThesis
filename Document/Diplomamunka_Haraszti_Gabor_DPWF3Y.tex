@@ -275,14 +275,39 @@
 	
 	A virtualizáció alatt általában azt értjük, ha egy fizikai számítógépen egyszerre több, egymástól független, izolált operációs rendszert tudunk futtatni, feléjük emulált virtuális számítógépet mutatva. Az izolációval el tudjuk érni, hogy az egyes operációs rendszerek ne tudjanak még végzetes hiba esetén se egymásra hatni, illetve a virtualizáció miatt a fizikai számítógép erõforrásait -- processzor, RAM, disk, egyéb IO -- is optimálisabban, a szükségleteknek megfelelõen tudjuk szétosztani az operációs rendszerek között.\\
 	
-	Manapság már a virtualizáció jelentése kibõvült a konténer technológiákkal is. \\
+	Manapság már a virtualizáció jelentése kibõvült a konténer technológiákkal is. Az alapötlet, hogy nincs szükség a teljes operációs rendszer virtualizációra a költséges memória és processzor többlet terheléssel, hanem elegendõ lenne a szoftvereket egymástól elkülöníteni azok eltérõ környezetével együtt, a közösen használt operációs rendszer elegendõ védelmet nyújt a processzek\footnote{Egymástól elkülönített folyamatok védett memóriával} elválasztásához, elegendõ lenne az operációs rendszer kernelében\footnote{Az operációs rendszer magja, mely a processzeket futtatja} elkülöníteni a folyamatot.\\
 	
-	https://www.refaktor.hu/docker-a-kontener-alapu-virtualizacio-1-resz/ \\
+	%Lásd~\ref{fig:dockervskernel} ábra a ~\pageref{fig:dockervskernel}. oldalon \\
+	%https://www.refaktor.hu/docker-a-kontener-alapu-virtualizacio-1-resz/ \\
 	
-	\includegraphics[width=12cm]{container-vs-vm.eps}\\
-	
-	A PoC-hoz szükséges lesz valamely virtualizációs technológia használata, ahol a fenti operációs rendszereken virtualizálva tudjuk majd futtatni a ROS példányokat. Alapvetõen kétféle virtualizáció lehetséges. Vagy minden egyes ROS példánynak allokálunk egy gazda-gépen futó, komplett vendég operációs rendszert, ami megfelel a hagyományos virtualizációs technológianák, vagy pedig valami konténer technológát használunk. A ROS követelményeit áttekintve a feladat nem igényel feltétlenül nehézsúlyú megoldást, ezért a Docker konténer technolófiáját választottam.\\
+	\begin{figure}[ht!]
+		\begin{center}
+			\includegraphics[width=12cm]{container-vs-vm.eps}
+			\caption{VM és Konténer különbsége}
+			\label{fig:vmvscontainer}
+		\end{center}
+	\end{figure}
 
+	A ~\ref{fig:vmvscontainer} ábrán a \pageref{fig:vmvscontainer}. oldalon erre látunk példát. A fizikai gép a gazda\footnote{Host Operating System} operációs rendszert futtatja, ami fölött fut egy virtualizációs\footnote{Hypervisor} réteg, ami futtatja az egyes vendég\footnote{Guest Operating System} operációs rendszereket. Ezeken a vendég operációs rendszereken futnak a nekünk szükséges alkalmazások a nekik szükséges környezettel -- például kódkönyvtárak, egyéb szükséges szoftverek --.\\
+	
+	A másik példa a konténer technológiát mutatja be, jelen esetben a Dockerrel. Itt a fizikai gépen az az operációs rendszer fut, amin a virtualizált alkalmazásokat akarjuk futtatni. A Docker engine, beépülve az operációs rendszer kernelébe jelenti a következõ réteget, mely már képes a konténereket futtatására, azaz a konténerizált processzek és környezetük izolációjára.\\
+	
+	Jól látszanak az elõnyök, megspóroltuk az izolált disk területnek a vendég operációs rendszerekhez szükséges mennyiségét, megspóroltuk a RAM-nak a vendég operációs rendszerek futtatásához szükséges többlet memória területét, megspóroltuk a vendég operációs rendszerek processz kezeléséhez szükséges többlet processzor kapacitását. Viszont nem menjünk el a nyilvánvaló hátrányok mögött se. A konténer technológia nem képes többféle operációs rendszer futtatására, se többféle frissítési szintû, verziójú, de azonos operációs rendszer kezelésére se.\\
+	
+	\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=11cm]{docker-architektura.eps}
+		\caption{Docker kapcsolata a Linux kernellel}
+		\label{fig:dockervskernel}
+	\end{center}
+	\end{figure}
+	
+	A Docker elõdje a 2008-ban megjelent LXC~\footnote{Linux containers} volt, amely ugyan konténer alapú, de teljes virtuális gépeket kezel. Ezzel szemben a Docker a konténer formátum egységesítése mellett komoly erõfeszítéseket tett az egyetlen program kedvéért létezõ konténerek mûködésé-ért.\\ 
+	
+	Architektúráját a ~\ref{fig:dockervskernel} ábra a \pageref{fig:vmvscontainer}. oldalon szemlélteti. Bemutatja, hogy a Docker milyen kapcsolatban áll a Linux kernellel. Látható, hogy a namespace-k és az erõforrások kiosztásáért, limitációjáért felelõs cgroups is a kernel részegysége. A libcontainer a jelenlegi, az LXC driver-t váltó megoldás, gyakorlatilag nem más, mint egy egységes interfész konténerek létrehozására. A libvirt egy API, egy menedzsment eszköz a virtualizációhoz. A systemd-nspawn egy chroot-hoz hasonló megoldás, azonban ez utóbbi teljesen virtualizálja a fájlrendszer hierarchiáját, a folyamatokat, illetve az IPC alrendszereket.\cite{DockerArchi}\\
+	
+	A PoC-hoz szükséges lesz valamely virtualizációs technológia használata, ahol az elõzõ pontban megvizsgált operációs rendszereken virtualizálva tudjuk majd futtatni a ROS példányokat. Alapvetõen kétféle virtualizáció lehetséges. Vagy minden egyes ROS példánynak allokálunk egy gazda-gépen futó, komplett vendég operációs rendszert, ami megfelel a hagyományos virtualizációs technológiának, vagy pedig valami konténer technológiát használunk. A ROS követelményeit áttekintve a feladat nem igényel feltétlenül nehézsúlyú megoldást, nincs szükség sokféle operációs rendszerre és a megvizsgált felhõ technológiák is támogatják, ezért a Docker konténer technológiáját választottam.\\
+	
 	\begin{thebibliography}{99}
 		% 10-nél több hivatkozás esetén
 		
@@ -317,6 +342,8 @@
 		\bibitem{ubuntu}Ubuntu operációs rendszer (https://www.ubuntu.com/), utoljára megtekintve: 2018.12.12.\vspace{-9pt}
 		
 		\bibitem{Rapyuta}ROS-t és Cloudroid-ot felhasználó specifikus robot-felhõ szolgáltató (https://www.rapyuta-robotics.com/), utoljára megtekintve: 2018.12.12.\vspace{-9pt}
+		
+		\bibitem{DockerArchi} Ákos, Kovács: Docker, a konténer alapú virtualizáció {em Refaktor Magazin} 2018.12.13. (https://www.refaktor.hu/docker-a-kontener-alapu-virtualizacio-1-resz/), utoljára megtekintve: 2018.12.12.\vspace{-9pt}
 		
 	\end{thebibliography}
 	

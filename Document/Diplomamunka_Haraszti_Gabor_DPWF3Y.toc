@@ -3,4 +3,4 @@
 \select@language {magyar} \contentsline {chapter}{\numberline {3}Felhaszn\'alt technol\'ogi\'ak bemutat\'asa}{11}
 \select@language {magyar} \contentsline {section}{\numberline {3.1}Oper\'aci\'os rendszer}{11}
 \select@language {magyar} \contentsline {section}{\numberline {3.2}Virtualiz\'aci\'os technol\'ogia}{12}
-\select@language {magyar} \contentsline {chapter}{Irodalomjegyz\'ek}{14}
+\select@language {magyar} \contentsline {chapter}{Irodalomjegyz\'ek}{15}
