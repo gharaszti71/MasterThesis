@@ -128,14 +128,16 @@
 	
 	\chapter{Bevezetés}
 	
-	A felhõ technológia mára már a mindennapok részévé vált az információ technológiát felhasználó cégeknél. Számos elõnyt jelent a felhasználók számára, de leginkább olcsón üzemeltethetõ és rugalmasan méretezhetõ infrastruktúrát ad a megfelelõ biztonsággal. Mindezt bérleti konstrukcióban szolgáltatja a beruházási konstrukcióval szemben, mely költséghatékonyabb a cégek számára.\\
+	A felhõ technológia mára már a mindennapok részévé vált az információ technológiát felhasználó cégeknél. Számos elõnyt jelent a felhasználók számára, leginkább olcsón üzemeltethetõ és rugalmasan méretezhetõ infrastruktúrát ad a megfelelõ biztonsággal. Mindezt bérleti konstrukcióban szolgáltatja a beruházási konstrukcióval szemben, mely költséghatékonyabb a cégek számára.\\
 	
-	Több területen is fel tudják a cégek használni, az intranetes rendszereiktõl kezdve az internetes megjelenést biztosító rendszereken át a partnerek felé nyitott extranetes megoldásokig. A felhõ technológiák fontosságát jól jelzik, hogy nélkülük nem létezhetnének azok a mára már természetesnek vett szolgáltatások az Interneten, amiket százmilliók, milliárdok vesznek igénybe nap mint nap, nélkülük nem lehetne kiszolgálni a 3 milliárd Internet felhasználót.\\
+	Több területen is fel tudják használni, az intranetes rendszereiktõl kezdve az internetes megjelenést biztosító rendszereken át a partnerek felé nyitott extranetes megoldásokig. A felhõ technológiák fontosságát jól jelzi, hogy nélkülük nem létezhetnének azok a mára már természetesnek vett szolgáltatások az Interneten, amiket százmilliók, milliárdok vesznek igénybe nap mint nap, nélkülük nem lehetne kiszolgálni a 3 milliárd Internet felhasználót.\\
 	
-	Manapság már az Interneten megjelenõ új adatok több, mint 80\%-a nem emberi kéz által létrehozott adat, a felhasznált rendszerek generálják azokat, beleértve az ipari rendszerek által létrehozott adatmennyiséget, az egyre terjedõ IoT alkalmazásokon át az egyéb kiberfizikai rendszerek által kibocsátott adatokig. Fontos tényezõ lett a hatalmas adatvagyon -- big data -- elemzése, ami nem létezhetne a felhõk számítási és adattárolási kapacitása nélkül. Manapság már a gyárak, ipari üzemek sem nélkülözhetik a felhõ technológiák használatát, a robotrendszereken és szenzorokon keletkezett adatok alapján jobb rugalmassággal tudják az adatokat feldolgozni és vezérelni a gyártás folyamatot.\\
+	Manapság az Interneten megjelenõ új adatok több, mint 80\%-a nem emberi kéz által létrehozott adat, a felhasznált rendszerek generálják azokat, beleértve az ipari rendszerek által létrehozott adatmennyiséget, az egyre terjedõ IoT alkalmazásokon át az egyéb kiberfizikai rendszerek által kibocsátott adatokig. Fontos tényezõ lett a hatalmas adatvagyon -- big data -- elemzése, ami nem létezhetne a felhõk számítási és adattárolási kapacitása nélkül. Manapság már a gyárak, ipari üzemek sem nélkülözhetik a felhõ technológiák használatát, a robotrendszereken és szenzorokon keletkezett adatok alapján jobb rugalmassággal tudják az adatokat feldolgozni és vezérelni a gyártás folyamatot.\\
 	
-	Fontos felhasználási területe lesz a felhõ szolgáltatásoknak a szolgáltató robotok. Jelenleg ugyan elenyészõ a számarányuk az ipari robotokhoz képest, viszont a jövõben ez jelentõsen változni fog -- egyes becslések szerint a 2015-ös 22\%-ról 2025-re 66\%-ot várnak --. Az ISO 13482-es szabvány szerint az ipari és szolgáltató robotoknak a definíciója:\\
-	
+	Fontos felhasználási területe lesz a felhõ szolgáltatásoknak a szolgáltató robotok. Jelenleg ugyan elenyészõ a számarányuk az ipari robotokhoz képest, viszont a jövõben ez jelentõsen változni fog -- egyes becslések szerint a 2015-ös 22\%-ról 2025-re 66\%-ot várnak --. Fontos viszont megkülönböztetnünk a szolgáltató robotokat az ipari robotoktól. Az ISO 13482-es szabvány szerint az ipari és szolgáltató robotoknak a definíciója:\\
+
+	\newpage
+
 	\begin{description}
 		\item[ipari robot:] Az ipari robot egy automatikus irányítású, újraprogramozható, többcélú automatikus ipari feladatok elvégzésére használt manipulátor, három vagy több tengelye programozható, melyek lehetnek rögzítettek vagy mobilak.\vspace{-9pt}
 		\item[szolgáltató robot:] Olyan robot, amely hasznos feladatokat hajt végre emberek vagy berendezések számára, kivéve az ipari automatizáló berendezéseket.\vspace{-9pt}
@@ -143,7 +145,7 @@
 
 	\bigskip
 
-	Mint látható a megfogalmazásból a szolgáltató robotok definíciója elég tág, ezért érdemes pár egyéb szempont szerint is megvizsgálni, ami a Robotmechanizmusok tankönyv \cite{RobotCsop} szerint a következõ:\\
+	Mint látható a megfogalmazásból a szolgáltató robotok definíciója elég tág, ezért érdemes pár egyéb szempont szerint is megvizsgálni, ami a Robotmechanizmusok jegyzet \cite{RobotCsop} sze-rint a következõ:\\
 	
 	\begin{tabular}{ | p{4cm} | p{5cm} | p{5cm} | }
 		\hline
@@ -165,15 +167,15 @@
 	\bigskip
 	\bigskip
 	
-	A diplomamunka feladat fõ célja, hogy az ipari robotika igényei mentén feltárja a felhõ technológiákat felhasználó különbözõ szoftver architektúra irányokat és egy kísérleti PoC\footnote{Proof of Concept} környezetet kiépítése a megoldások mérnöki és tudományos vizsgálatához. A megvalósításnál törekedni kell az elterjedt nyílt forráskódú technológiák használatára.\\
+	A diplomamunka feladat fõ célja, hogy az ipari robotika igényei mentén feltárja a felhõ technológiákat felhasználó különbözõ szoftver architektúra irányokat és egy kísérleti PoC\footnote{Proof of Concept} környezet kiépítése a megoldások mérnöki és tudományos vizsgálatához. A megvalósításnál törekedni kell az elterjedt nyílt forráskódú technológiák használatára a kiírás szerint.\\
 	
-	A feladatnak meg kell valósítania különbözõ környezetekben egy példa alkalmazást, egy pályatervezési feladatot. A felépítendõ rendszer része lesz egy robot a maga környezetével, helyi szerver számítógép, valamint több felhõ rendszer is, úgy mint a Microsoft Azure és Amazon AWS rendszere. Külön említést érdemel a Rapyuta\cite{Rapyuta} specifikus robot felhõ szolgáltatásának vizsgálata is.\\
+	A feladatnak meg kell valósítania különbözõ környezetekben egy példa alkalmazást, egy pályatervezési feladatot. A felépítendõ rendszer része lesz egy robot a maga környezetével, helyi szerver számítógép, valamint több felhõ rendszer is, úgy mint a Microsoft Azure és Amazon AWS rendszere. Külön említést érdemel a Rapyuta\cite{Rapyuta}, specifikus robot felhõ szolgáltatásának vizsgálata is.\\
 	
 	\chapter{Irodalmi áttekintés}
 	
 	A munka megkezdése elõtt célszerû tájékozódni a probléma lehetséges megoldásairól a hazai és nemzetközi szakirodalomban, ami után a megoldási alternatívák már ki tudnak rajzolódni és lehetséges lesz szakmailag megalapozott javaslat megfogalmazására.\\
 
-	Galambos Péter cikkébõl \cite{GP_Cloud} megtudhatjuk, hogy habár sokáig megfelelt a robotikában a helyi kontrollerekrõl vezérelni a robotokat, a manapság szükséges számítási kapacitás igénynek ez már nem felel meg. Az új kihívások szükségessé teszik külsõ erõforrások bevonását is a munkába. A kapacitás bõvítésnek több módja is van a lokális szerverektõl a publikus felhõ szolgáltatásokig bezárólag. A cikk bemutatja a hagyományos IT területtõl némileg eltérõ robotikai alkalmazások szükségleteit a felhõ szolgáltatásokban.\\
+	Galambos Péter cikkébõl \cite{GP_Cloud} megtudhatjuk, hogy habár sokáig megfelelt a robotikában a helyi kontrollerekrõl vezérelni a robotokat, a manapság szükséges számítási kapacitás igényeknek ez már nem felel meg. Az új kihívások szükségessé teszik külsõ erõforrások bevonását is a munkába. A kapacitás bõvítésnek több módja is van a lokális szerverektõl a publikus felhõ szolgáltatásokig bezárólag. A cikk bemutatja a hagyományos IT területtõl némileg eltérõ robotikai alkalmazások szükségleteit a felhõ szolgáltatásokban.\\
 	
 	Elõször ismertetésre kerülnek a fõbb paradigmák a robotika kontextusában:\\
 	
@@ -197,7 +199,7 @@
 	
 	Fontos részlet -- fõleg a gyártás számára --, hogy a robotrendszerek energia hatékony módon dolgozzanak, amiben szintén nélkülözhetetlen lehet a felhõ szerepe, de fontos lehet olyan helyzetekben is, amikor az energiavételezés lehetõségei korlátozottak. Az energia-optimalizált mûködés fontos szerepet játszik a zöld-felhasználásban, nem csak a gyártás területén.\\
 	
-	Adarsha Kharel és munkatársai cikke \cite{ROS_Cloud} a ROS alapú felhõ-robotikával foglalkozik. Elõször is fogalmakat tisztáz. Az operációs rendszer és a robotikai alkalmazások között definiál egy réteget, a "Robotic middleware"-t, mely az alkalmazások elõl elfedi a hardware és OS rétegeket, így egyszerûvé téve a robotikai fejlesztéseket és olcsóbbá téve azt. A ROS \cite{ROS} -- Robot Operating System -- egy nyílt forráskódú "meta-operációs rendszer", ami biztosítja a\\
+	Adarsha Kharel és munkatársai cikke \cite{ROS_Cloud} a ROS alapú felhõ-robotikával foglalkozik. Elõször is fogalmakat tisztáz. Az operációs rendszer és a robotikai alkalmazások között definiál egy réteget, a "Robotic middleware"-t, mely az alkalmazások elõl elfedi a hardware és OS rétegeket, így egyszerûvé téve a robotikai fejlesztéseket és olcsóbbá téve azt. A ROS \cite{ROS} -- Robot Operating System -- egy nyílt forráskódú "meta-operációs rendszer", ami biztosítja a
 	
 	\begin{itemize}
 		\item Hardware abstrakciót\vspace{-9pt}
@@ -206,7 +208,7 @@
 		\item Csomag menedzsmentet\vspace{-9pt}
 	\end{itemize}
 
-	\bigskip
+	\medskip
 	
 	A cikk leírja a ROS alapfogalmait, részeit. Alapvetõ egység a Node, ami reprezentálja a ROS-on belül a felületet a programok felé. Egy ROS példány több Node-ot is indíthat. Az egyes Node-ok tartalmazzák azután a kétféle ROS szolgáltatás típust és a message-eket. 
 	
@@ -216,9 +218,9 @@
 		\item[topic] A Node-ok fel tudnak iratkozni topic-okra és maguk is tudnak kiajánlani topic-okat -- megvalósítva az informatikában jól ismert publisher/subscriber mintát --. Egy topic-ba több node is írhat (publish) és több node is olvashat (subscrbe) belõle. \vspace{-9pt}
 	\end{description}
 
-	\bigskip
+	\medskip
 	
-	A ROS-t számos nyelvbõl el lehet érni, , többek között C++, Python, lisp, Java, stb. környezetekbõl. Illetve rendelkezik egy csomag kezelõvel, amivel finomhangolható, hogy mely szoftverkomponensek legyenek felhasználva az adott ROS példányban. A ROS elsõdleges célja, hogy támogassa a kód újrafelhasználást a robotikai kutatásokban és fejlesztésekben \cite{ROS}. A ROS támogatja a moduláris, "tool-based" fejlesztés filozófiáját a robo-tikában.\\
+	A ROS-t számos nyelvbõl el lehet érni, , többek között C++, Python, lisp, Java, stb. környezetekbõl. Illetve rendelkezik egy csomag kezelõvel, amivel finomhangolható, hogy mely szoftverkomponensek legyenek felhasználva az adott ROS példányban. A ROS elsõdleges célja, hogy támogassa a kód újrafelhasználást a robotikai kutatásokban és fejlesztésekben \cite{ROS}. A ROS támogatja a moduláris, "tool-based" fejlesztés filozófiáját a robotikában.\\
 	
 	Pablo González-Nalda és munkatársai ROS és Docker alapú kiber-fizikai -- CPS, Cyber-Physical Systems -- architektúra tervezéssel foglalkozó cikke \cite{CPS} bevezetést nyújt általánosságban az ICT -- Information and Communication Technologies -- rendszerek tervezési aspektusaiba, legfõképpen az ipari és CPS felhasználások tekintetében, érintve a tervezõ rendszerektõl az Ipar 4.0-n át az IoT rendszerekig. Kitér a FOSS -- Free and Open-Source Systems -- rendszerek felhasználhatóságára, a ROS hasznára, mint a kód újrafelhasználhatóság és magas szintû integráció lehetõségére. \\
 	
@@ -261,11 +263,11 @@
 	
 	\chapter{Felhasznált technológiák bemutatása}
 	
-	A diplomamunka feladat által megvalósítandó PoC környezet kiépítéséhez több technológiát is meg kellett vizsgálni, mint lehetséges alternatívákat és a munkához megfele-lõket ki kellett választani. A kialakítandó rendszerben használni kell majd saját szervereken futó virtualizációs környezeteket, leginkább konténer technológiával, futtatni kell HTTP szervereket, valamint ROS példányokat. A rendszer részei lesznek az Amazon AWS és Microsoft Azure felhõ szolgáltatók által nyújtott virtualizációs és funkcionális szolgáltatásai is. \\
+	A diplomamunka feladat által megvalósítandó PoC környezet kiépítéséhez több technológiát is meg kellett vizsgálni, mint lehetséges alternatívákat és a munkához megfele-lõket ki kellett választani. A kialakítandó rendszerben használni kell majd saját szervereken futó virtualizációs környezeteket -- leginkább konténer technológiával --,  futtatni kell HTTP szervert, valamint ROS példányokat. A rendszer részei lesznek az Amazon AWS és Microsoft Azure felhõ szolgáltatók által nyújtott virtualizációs és funkcionális szolgáltatásai is. \\
 	
 	\section{Operációs rendszer}
 
-	A részletes feladatkiírásnak megfelelõen elsõsorban a nyílt forrású operációs rendszereket vettem számításba. A kereskedelmi Windows változatok teljesen kizáródtak a választásból, mert rajtuk nem fut a ROS \cite{ROS}. Az open source operációs rendszerek közül a ROS által támogatottak tipikusan azok, melyek a Debian\cite{debian} platform csomagkezelõ szolgáltatásait használják. Pillanatnyilag a két támogatott -- Linux alapú, debian rendszerû -- operációs rendszer az Ubuntu Wily (15.10-es verzió), az Ubuntu Xenial (16.04-es verzió) és Debian Jessie (8-as verzió). Jelenleg ezek már mind elavult verziók, az Ubuntu LTS\footnote{LTS - Long Term Support (hosszútávú támogatás)} a 18.10-es verziónál tart, míg a Debian a 9.4.0 verziónál.\\
+	A részletes feladatkiírásnak megfelelõen elsõsorban a nyílt forrású operációs rendszereket vettem számításba. A kereskedelmi Windows változatok teljesen kizáródtak a kiválasztásból, mert rajtuk nem fut a ROS \cite{ROS}. Az open source operációs rendszerek közül a ROS által támogatottak tipikusan azok, melyek a Debian\cite{debian} platform csomagkezelõ szolgáltatásait használják. Pillanatnyilag a három támogatott -- Linux alapú, debian rendszerû -- operációs rendszer az Ubuntu Wily (15.10-es verzió), az Ubuntu Xenial (16.04-es verzió) és Debian Jessie (8-as verzió). Ezek már mind elavult verziók, az Ubuntu LTS\footnote{LTS - Long Term Support (hosszútávú támogatás)} a 18.10-es verziónál tart, míg a Debian a 9.4.0 verziónál.\\
 	
 	A választás másik aspektusa, hogy az említett felhõ szolgáltatóknál mely Linux verziók támogatottak a háromból. A Microsoft Azure az Ubuntu Server 16.04 LTS verzióját, valamint a Debian 8 Jessie verziót is, azaz kettõt is a ROS platformjai közül. Az Amazon AWS szintén támogatja a Debian 8 Jessie verzióját, valamint az Ubuntu 16.04 LTS-t is.\\
 	
@@ -315,7 +317,19 @@
 	%https://azure.microsoft.com/en-us/services/kubernetes-service/docker/
 	A Microsoft Azure szolgáltatása a Docker Enterprise Edition-t használ. Az Amazon-hoz képes sokkal több platformot támogat, beleértve a számunkra szükséges Ubuntu 16.04-es verziót is.\\
 	
+	A Rapyuta szolgáltatása már eleve azt a réteget valósítja meg, amit létrehozunk lokális és univerzális felhõ szolgáltatásokkal a feladat során. Az alapvetõen robot kontrollerre tervezett ROS-t a Rosbridge segítségével teszi elérhetõvé a IP hálózaton keresztül, valamint a Cloudroid segítségével hoz létre egy menedzselt szolgáltatást.\\
+	
 	% Kubernetes - Egy mikroservice és Docker mgmt cucc: https://kubernetes.io/
+	
+	\section{ROS - Robot Operating System}
+	
+	A feladathoz felhasznált alap, a ROS \cite{ROS}, melynek szolgáltatásai kívánjuk a TCP/IP hálózaton kerewsztül elérni, Internet-en keresztül távolról szolgáltatni. Alapvetõen arra tervezték, hogy robot kontrolleren fusson és helyi, egyedi protokollokon kommunikáljon a többi ROS példánnyal.\\
+	
+	A megnövekedett feladatok és új kihívások miatt egyre sürgetõbbé vált, hogy elérhetõ legyen a megszokott Internetes protokollokon keresztül, funkcionalitása felkerüljön a felhõbe is. Sajnos eredeti tervezése szerint nagyon kötõdik a fizikai robothoz, az alap struktúra az egy robot egy ROS példány, a kontextusfüggõ paraméterek mindenképpen ROS szinten találhatók meg. Itt tudjuk megadni a konkrét robot paramétereit, valamint a környezetének a leírását is. Viszont van számos olyan funkcionalitás a ROS-hoz -- a hozzá kapcsolódó kiterjedt modul könyvtárban --, melyek nem kontextus függõek és így könnyen leválaszthatóak szolgáltatásként.\\
+	
+	Alapvetõen a ROS egy middleware, mely bizonyos Linux disztribúciókra épül rá. Tartalmaz számos kódkönyvtárat, valamint több szolgáltatást is nyújt. Szerviz végpontokat nyújt távoli eljárások felé, úgynevezett RPC~\footnote{Remote Procedure Call} végpontokat lehet rajta definiálni. Üzenet továbbító szolgáltatása publisher/subscriber rendszerben képes adott formátumú üzenetek fogadására, továbbítására, valamint képes felvenni és visszajátszani a kapott vagy küldött üzeneteket. Az ilyen szolgáltatás végpontokat hívjuk a ROS terminológiában topic-oknak. Tartalmaz továbbá egy elosztott paraméter rendszert, globális katalógust, melyet, mint egy adatbázist a ROS Master-rõl lehet elérni.\\
+	
+	Az adott gépen futó ROS-ban Node-okat tudunk definiálni, melyek logikai összefoglalói a kiajánlott szolgáltatásoknak, "fizikailag" az operációs rendszer processzei. A ROS Master egy névtér és regisztrációs szolgáltatás a ROS Node-oknak.\\
 	
 	\chapter{A megvalósítandó rendszer specifikációja}
 	

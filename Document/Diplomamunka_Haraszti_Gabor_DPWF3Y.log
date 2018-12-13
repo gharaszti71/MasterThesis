@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.12.6)  13 DEC 2018 15:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.12.6)  14 DEC 2018 00:22
 entering extended mode
 **./Diplomamunka_Haraszti_Gabor_DPWF3Y.tex
 (Diplomamunka_Haraszti_Gabor_DPWF3Y.tex
@@ -343,6 +343,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--132
  []
 
 
+Overfull \hbox (13.16069pt too wide) in paragraph at lines 133--134
+\T1/ptm/m/n/12 már ter-mészetes-nek vett szol-gál-tatá-sok az In-ter-neten, ami
+ket százmil-liók, mil-liár-dok vesznek
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
@@ -360,48 +366,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--138
 [3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 146--147
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
 
-Overfull \hbox (3.14043pt too wide) in paragraph at lines 153--153
+Overfull \hbox (3.14043pt too wide) in paragraph at lines 155--155
 []\T1/ptm/m/n/12 MUNKAKÖRNYEZET| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
 []\T1/ptm/m/n/12 Betanítás speciális fe-lada-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
 []\T1/ptm/m/n/12 Robotok és em-berek
  []
 
 
-Underfull \hbox (badness 1533) in paragraph at lines 159--160
+Underfull \hbox (badness 1533) in paragraph at lines 161--162
 []\T1/ptm/m/n/12 Robotoknak és em-bereknek
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 159--160
+Underfull \hbox (badness 1072) in paragraph at lines 161--162
 \T1/ptm/m/n/12 területen, hogy szol-gál-tatást
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--161
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
 []\T1/ptm/m/n/12 Megbízásra ru-gal-masan
  []
 
 
-Overfull \hbox (7.54724pt too wide) in paragraph at lines 148--164
+Overfull \hbox (7.54724pt too wide) in paragraph at lines 150--166
 [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
-
  []
 
 
@@ -409,13 +410,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
-[4]
-2. fejezet.
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
+[4]
+2. fejezet.
 
 Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
@@ -441,33 +442,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
-[5
 
-]
 Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
+[5
 
-Overfull \hbox (2.07805pt too wide) in paragraph at lines 188--189
-\T1/ptm/m/n/12 cióra, mint például a pil-lanat-nyi ál-lapot, vagy az al-ka-lmaz
-ás bel-s® ál-lapota. M¶ködésükhöz
- []
-
-
+]
 Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
 
-Overfull \hbox (4.96704pt too wide) in paragraph at lines 190--191
-[]\T1/ptm/b/n/12 Contextful: \T1/ptm/m/n/12 azaz ál-lapot füg-g® szol-gál-tatá-
-sok-nak szük-ségük van in-for-má-cióra a tár-gyrend-
+Overfull \hbox (2.07805pt too wide) in paragraph at lines 190--191
+\T1/ptm/m/n/12 cióra, mint például a pil-lanat-nyi ál-lapot, vagy az al-ka-lmaz
+ás bel-s® ál-lapota. M¶ködésükhöz
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
+ []
+
+
+Overfull \hbox (4.96704pt too wide) in paragraph at lines 192--193
+[]\T1/ptm/b/n/12 Contextful: \T1/ptm/m/n/12 azaz ál-lapot füg-g® szol-gál-tatá-
+sok-nak szük-ségük van in-for-má-cióra a tár-gyrend-
  []
 
 
@@ -485,18 +486,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
-[6]
+
 Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
-
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 200--201
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
 
  []
 
@@ -505,25 +501,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
-[7]
+
 Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
-
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 227--228
 
  []
 
 
-Overfull \hbox (13.0283pt too wide) in paragraph at lines 229--230
-[]\T1/ptm/m/n/12 Christopher Crick és munkatár-sai Rosbridge-el fog-glalkozó ci
-kke [[]] be-mu-tat-ja a Rosbridge-
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
-
+Overfull \hbox (13.0283pt too wide) in paragraph at lines 231--232
+[]\T1/ptm/m/n/12 Christopher Crick és munkatár-sai Rosbridge-el fog-glalkozó ci
+kke [[]] be-mu-tat-ja a Rosbridge-
  []
 
 
@@ -536,30 +532,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
-[8]
+
 Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 
-Overfull \hbox (4.11137pt too wide) in paragraph at lines 244--245
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
+
+ []
+
+[8]
+Overfull \hbox (4.11137pt too wide) in paragraph at lines 246--247
 []\T1/ptm/m/n/12 A Cloudroid-ban a sz-ervizb®l két rész
  []
 
 
-Overfull \hbox (20.16779pt too wide) in paragraph at lines 246--247
+Overfull \hbox (20.16779pt too wide) in paragraph at lines 248--249
 []\T1/ptm/m/n/12 A Cloudroid-on futó szol-gál-tatá-sok elérhet®ek
  []
 
 
-Overfull \hbox (11.22942pt too wide) in paragraph at lines 252--253
+Overfull \hbox (11.22942pt too wide) in paragraph at lines 254--255
 []\T1/ptm/m/n/12 Russell Toris és munkatár-sai Robot Web Tools-al foglalkozó ci
 kke [[]] a nevezett, Rosbridge-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
-
  []
 
 
@@ -567,23 +563,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 256.
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
+
 Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
  []
 
-[9]
-Overfull \hbox (0.18942pt too wide) in paragraph at lines 258--259
-[]\T1/ptm/m/n/12 Az RWT-ben külön fi-gyel-met fordí-tot-tak a stream-ing ada-to
-k megfelel® kezelésére, például
- []
-
-
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 258.
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
 Underfull \hbox (badness 10000) in paragraph at lines 258--259
 
+ []
+
+[9]
+Overfull \hbox (0.18942pt too wide) in paragraph at lines 260--261
+[]\T1/ptm/m/n/12 Az RWT-ben külön fi-gyel-met fordí-tot-tak a stream-ing ada-to
+k megfelel® kezelésére, például
  []
 
 
@@ -591,21 +587,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 260--261
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
+
+ []
+
 [10]
 3. fejezet.
 
-Overfull \hbox (4.53531pt too wide) in paragraph at lines 264--265
+Overfull \hbox (4.53531pt too wide) in paragraph at lines 266--267
 \T1/ptm/m/n/12 l®ket ki kel-lett válasz-tani. A kialakí-tandó rend-szer-ben has
 znál-ni kell ma-jd saját sz-ervereken
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
-
+Overfull \hbox (3.9215pt too wide) in paragraph at lines 266--267
+\T1/ptm/m/n/12 futó vir-tu-al-izá-ciós környezeteket -- leginkább kon-tén-er te
+ch-nológiá-val --, fut-tat-ni kell HTTP
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--269
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
  []
 
@@ -619,27 +621,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
+
+ []
+
 [11
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
 
  []
 
 
-Overfull \hbox (3.30896pt too wide) in paragraph at lines 278--279
+Overfull \hbox (3.30896pt too wide) in paragraph at lines 280--281
 \T1/ptm/m/n/12 pro-cess-zor töb-blet ter-helés-sel, hanem ele-gend® lenne a szo
 ftvereket egymástól elkülöníteni
  []
 
 
-Overfull \hbox (2.04942pt too wide) in paragraph at lines 278--279
+Overfull \hbox (2.04942pt too wide) in paragraph at lines 280--281
 \T1/ptm/m/n/12 met nyújt a pro-cesszek[] elválasztásához, ele-gend® lenne az op
 -erá-ciós rend-sz-er ker-nelében[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
 
  []
 
@@ -651,7 +658,7 @@ Package epstopdf Info: Source file: <container-vs-vm.eps>
 (epstopdf)                    size: 1726274 bytes
 (epstopdf)             Command: <epstopdf --outfile=container-vs-vm-eps-convert
 ed-to.pdf container-vs-vm.eps>
-(epstopdf)             \includegraphics on input line 282.
+(epstopdf)             \includegraphics on input line 284.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -661,20 +668,20 @@ pdfTeX warning: pdflatex.exe (file ./container-vs-vm-eps-converted-to.pdf): PDF
 File: container-vs-vm-eps-converted-to.pdf Graphic file (type pdf)
 <use container-vs-vm-eps-converted-to.pdf>
 Package pdftex.def Info: container-vs-vm-eps-converted-to.pdf  used on input li
-ne 282.
+ne 284.
 (pdftex.def)             Requested size: 341.43306pt x 189.8857pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--289
-
- []
-
-[12 <./container-vs-vm-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 290--291
 
  []
 
-
+[12 <./container-vs-vm-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 292--293
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
 
  []
 
@@ -686,7 +693,7 @@ Package epstopdf Info: Source file: <docker-architektura.eps>
 (epstopdf)                    size: 30503 bytes
 (epstopdf)             Command: <epstopdf --outfile=docker-architektura-eps-con
 verted-to.pdf docker-architektura.eps>
-(epstopdf)             \includegraphics on input line 296.
+(epstopdf)             \includegraphics on input line 298.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -696,126 +703,163 @@ pdfTeX warning: pdflatex.exe (file ./docker-architektura-eps-converted-to.pdf):
 File: docker-architektura-eps-converted-to.pdf Graphic file (type pdf)
 <use docker-architektura-eps-converted-to.pdf>
 Package pdftex.def Info: docker-architektura-eps-converted-to.pdf  used on inpu
-t line 296.
+t line 298.
 (pdftex.def)             Requested size: 312.9803pt x 161.64165pt.
 
-Overfull \hbox (1.9043pt too wide) in paragraph at lines 302--303
+Overfull \hbox (1.9043pt too wide) in paragraph at lines 304--305
 \T1/ptm/m/n/12 lett ko-moly er®feszítéseket tett az egyetlen pro-gram ked-véért
  létez® kon-ténerek m¶ködésé-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--303
-
- []
-
-[13 <./docker-architektura-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
  []
 
-
-Overfull \hbox (10.29642pt too wide) in paragraph at lines 306--307
-\T1/ptm/m/n/12 Alapvet®en két-féle vir-tu-al-izá-ció lehet-séges. Vagy min-den 
-egyes ROS példány-nak al-lokálunk
- []
-
-
+[13 <./docker-architektura-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 306--307
 
  []
 
 
-Overfull \hbox (18.85266pt too wide) in paragraph at lines 310--311
+Overfull \hbox (10.29642pt too wide) in paragraph at lines 308--309
+\T1/ptm/m/n/12 Alapvet®en két-féle vir-tu-al-izá-ció lehet-séges. Vagy min-den 
+egyes ROS példány-nak al-lokálunk
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+
+ []
+
+
+Overfull \hbox (18.85266pt too wide) in paragraph at lines 312--313
 \T1/ptm/m/n/12 A fe-la-dat részét képezi több fel-h® tech-noló-gia kipróbálása,
  rend-szerbe in-te-grálása. Alapvet®en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--314
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--317
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--321
 
  []
 
 [14]
+Overfull \hbox (4.0035pt too wide) in paragraph at lines 326--327
+\T1/ptm/m/n/12 A fe-la-dathoz fel-használt alap, a ROS [[]], melynek szol-gál-t
+atá-sai kíván-juk a TCP/IP hálóza-
+ []
+
+
+Overfull \hbox (2.80904pt too wide) in paragraph at lines 326--327
+\T1/ptm/m/n/12 ton kerewsztül elérni, Internet-en keresztül távol-ról szol-gál-
+tat-ni. Alapvet®en ar-ra ter-vezték,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 326--327
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
+
+ []
+
+[15]
 4. fejezet.
 
-Overfull \hbox (4.25565pt too wide) in paragraph at lines 322--323
+Overfull \hbox (4.25565pt too wide) in paragraph at lines 336--337
 \T1/ptm/m/n/12 A meg-valósí-tandó rend-sz-er egy PoC, ami nem feltétlenül egy f
 e-la-da-tra op-ti-mal-izált konkrét
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--323
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
- []
-
-[15
-
-]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 340.
-
- ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 340.
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 340.
-
-Underfull \hbox (badness 1062) in paragraph at lines 346--347
-[]\T1/ptm/m/n/12 Docker lightweight con-tain-er en-gine (https://www.docker.com
-/products/docker-
  []
 
 [16
 
 ]
-Underfull \hbox (badness 3942) in paragraph at lines 356--357
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 354.
+
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 354.
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 354.
+
+Underfull \hbox (badness 1062) in paragraph at lines 360--361
+[]\T1/ptm/m/n/12 Docker lightweight con-tain-er en-gine (https://www.docker.com
+/products/docker-
+ []
+
+[17
+
+]
+Underfull \hbox (badness 3942) in paragraph at lines 370--371
 []\T1/ptm/m/n/12 Dr. Sz-abó Zsolt, Bu-dai Csa-ba, Dr. Kovács Lás-zló, Dr. Lipov
 sz-ki Györ-
  []
 
 
-Underfull \hbox (badness 7379) in paragraph at lines 356--357
+Underfull \hbox (badness 7379) in paragraph at lines 370--371
 \T1/ptm/m/n/12 gy: Robot-mech-a-niz-mu-sok Web site tananyag, robotok cso-por-t
 osítása fe-
  []
 
 
-Underfull \hbox (badness 6725) in paragraph at lines 358--359
+Underfull \hbox (badness 6725) in paragraph at lines 372--373
 []\T1/ptm/m/n/12 Debian op-erá-ciós rend-sz-er (https://www.debian.org/), utolj
 ára megtek-intve:
  []
 
 
-Underfull \hbox (badness 3525) in paragraph at lines 360--361
+Underfull \hbox (badness 3525) in paragraph at lines 374--375
 []\T1/ptm/m/n/12 Ubuntu op-erá-ciós rend-sz-er (https://www.ubuntu.com/), utolj
 ára megtek-intve:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--363
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
 []\T1/ptm/m/n/12 ROS-t és Cloudroid-ot fel-használó speci-fikus robot-felh® szo
 l-gál-tató
  []
 
 
-Underfull \hbox (badness 2452) in paragraph at lines 364--365
+Underfull \hbox (badness 2452) in paragraph at lines 378--379
 []\T1/ptm/m/n/12 Ákos, Kovács: Dock-er, a kon-tén-er alapú vir-tu-al-izá-ció em
  Re-fak-tor Mag-a-
  []
 
-[17] (Diplomamunka_Haraszti_Gabor_DPWF3Y.aux) ) 
+[18] (Diplomamunka_Haraszti_Gabor_DPWF3Y.aux) ) 
 Here is how much of TeX's memory you used:
  4822 strings out of 492969
  67514 string characters out of 3135835
@@ -823,7 +867,7 @@ Here is how much of TeX's memory you used:
  8589 multiletter control sequences out of 15000+200000
  42327 words of font info for 65 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,43p,799b,383s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,11n,43p,794b,383s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fon
 ts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
@@ -832,10 +876,10 @@ C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on Diplomamunka_Haraszti_Gabor_DPWF3Y.pdf (17 pages, 1874968 byt
+Output written on Diplomamunka_Haraszti_Gabor_DPWF3Y.pdf (18 pages, 1877626 byt
 es).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
+ 140 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
