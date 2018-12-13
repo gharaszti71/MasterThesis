@@ -277,9 +277,6 @@
 	
 	Manapság már a virtualizáció jelentése kibõvült a konténer technológiákkal is. Az alapötlet, hogy nincs szükség a teljes operációs rendszer virtualizációra a költséges memória és processzor többlet terheléssel, hanem elegendõ lenne a szoftvereket egymástól elkülöníteni azok eltérõ környezetével együtt, a közösen használt operációs rendszer elegendõ védelmet nyújt a processzek\footnote{Egymástól elkülönített folyamatok védett memóriával} elválasztásához, elegendõ lenne az operációs rendszer kernelében\footnote{Az operációs rendszer magja, mely a processzeket futtatja} elkülöníteni a folyamatot.\\
 	
-	%Lásd~\ref{fig:dockervskernel} ábra a ~\pageref{fig:dockervskernel}. oldalon \\
-	%https://www.refaktor.hu/docker-a-kontener-alapu-virtualizacio-1-resz/ \\
-	
 	\begin{figure}[ht!]
 		\begin{center}
 			\includegraphics[width=12cm]{container-vs-vm.eps}
@@ -306,7 +303,28 @@
 	
 	Architektúráját a ~\ref{fig:dockervskernel} ábra a \pageref{fig:vmvscontainer}. oldalon szemlélteti. Bemutatja, hogy a Docker milyen kapcsolatban áll a Linux kernellel. Látható, hogy a namespace-k és az erõforrások kiosztásáért, limitációjáért felelõs cgroups is a kernel részegysége. A libcontainer a jelenlegi, az LXC driver-t váltó megoldás, gyakorlatilag nem más, mint egy egységes interfész konténerek létrehozására. A libvirt egy API, egy menedzsment eszköz a virtualizációhoz. A systemd-nspawn egy chroot-hoz hasonló megoldás, azonban ez utóbbi teljesen virtualizálja a fájlrendszer hierarchiáját, a folyamatokat, illetve az IPC alrendszereket.\cite{DockerArchi}\\
 	
-	A PoC-hoz szükséges lesz valamely virtualizációs technológia használata, ahol az elõzõ pontban megvizsgált operációs rendszereken virtualizálva tudjuk majd futtatni a ROS példányokat. Alapvetõen kétféle virtualizáció lehetséges. Vagy minden egyes ROS példánynak allokálunk egy gazda-gépen futó, komplett vendég operációs rendszert, ami megfelel a hagyományos virtualizációs technológiának, vagy pedig valami konténer technológiát használunk. A ROS követelményeit áttekintve a feladat nem igényel feltétlenül nehézsúlyú megoldást, nincs szükség sokféle operációs rendszerre és a megvizsgált felhõ technológiák is támogatják, ezért a Docker konténer technológiáját választottam.\\
+	A PoC-hoz szükséges lesz virtualizációs technológia használatára, ahol az elõzõ pontban megvizsgált operációs rendszereken virtualizálva tudjuk majd futtatni a ROS példányokat. Alapvetõen kétféle virtualizáció lehetséges. Vagy minden egyes ROS példánynak allokálunk egy gazda-gépen futó, komplett vendég operációs rendszert, ami megfelel a hagyományos virtualizációs technológiának, vagy pedig valami konténer technológiát használunk. A ROS követelményeit áttekintve a feladat nem igényel feltétlenül nehézsúlyú megoldást, nincs szükség sokféle operációs rendszerre és a megvizsgált felhõ technológiák is támogatják, ezért a Docker konténer technológiáját választottam.\\
+	
+	\section{Felhõ szolgáltatások}
+	
+	A feladat részét képezi több felhõ technológia kipróbálása, rendszerbe integrálása. Alapvetõen két univerzális felhõ szolgáltatót fogok kiértékelni. Az egyik az Amazon AWS-e a másik a Microsoft Azure szolgáltatása. Ezen kívül kiértékelésre kerül még egy robotikára specializált, ROS alapú felhõ szolgáltató is, a Rapyuta\cite{Rapyuta}.\\
+	
+	%https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html
+	Az Amazon Docker alapú felhõ szolgáltatása az Amazon ECS\footnote{Elastic Container Service}, ami támogatja a kiválasztott Ubuntu 16.04 verziójú Linux operációs rendszert és a ROS-t is. A Docker image elkészítése után az feltölthetõ az Amazon ECR\footnote{Elastic Container Registry}-be, majd elindítható akár több példányban is.\\
+	
+	%https://azure.microsoft.com/en-us/services/kubernetes-service/docker/
+	A Microsoft Azure szolgáltatása a Docker Enterprise Edition-t használ. Az Amazon-hoz képes sokkal több platformot támogat, beleértve a számunkra szükséges Ubuntu 16.04-es verziót is.\\
+	
+	% Kubernetes - Egy mikroservice és Docker mgmt cucc: https://kubernetes.io/
+	
+	\chapter{A megvalósítandó rendszer specifikációja}
+	
+	A megvalósítandó rendszer egy PoC, ami nem feltétlenül egy feladatra optimalizált konkrét megvalósítás, sokkal inkább a technológiák kipróbálására szolgáló megoldás, így minden kipróbálandó technológia része lesz a kialakított architektúrának. Alapvetõen célja, hogy a robotikai kutatások, alkalmazások számára ki lehessen választani a legjobb megoldást a rendelkezésre álló eszközkészletbõl. A rendszer által megvalósított példa feladat a pályatervezés lesz, amit a rendszerben különféle pontokra kihelyezve tesztelünk sebességre és válaszidõre.\\
+	
+	%https://github.com/cyberdb/Cloudroid
+	A rendszerhez felhasználjuk a Cloudroid\cite{Cloudroid} szoftvert a ROS szolgáltatásainak kiajánlására az Internet alapú hálózat felé. 
+	
+	
 	
 	\begin{thebibliography}{99}
 		% 10-nél több hivatkozás esetén

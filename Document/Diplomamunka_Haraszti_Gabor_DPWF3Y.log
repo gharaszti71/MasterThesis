@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.12.6)  13 DEC 2018 12:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.12.6)  13 DEC 2018 15:46
 entering extended mode
 **./Diplomamunka_Haraszti_Gabor_DPWF3Y.tex
 (Diplomamunka_Haraszti_Gabor_DPWF3Y.tex
@@ -651,7 +651,7 @@ Package epstopdf Info: Source file: <container-vs-vm.eps>
 (epstopdf)                    size: 1726274 bytes
 (epstopdf)             Command: <epstopdf --outfile=container-vs-vm-eps-convert
 ed-to.pdf container-vs-vm.eps>
-(epstopdf)             \includegraphics on input line 285.
+(epstopdf)             \includegraphics on input line 282.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -661,20 +661,20 @@ pdfTeX warning: pdflatex.exe (file ./container-vs-vm-eps-converted-to.pdf): PDF
 File: container-vs-vm-eps-converted-to.pdf Graphic file (type pdf)
 <use container-vs-vm-eps-converted-to.pdf>
 Package pdftex.def Info: container-vs-vm-eps-converted-to.pdf  used on input li
-ne 285.
+ne 282.
 (pdftex.def)             Requested size: 341.43306pt x 189.8857pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
 
  []
 
 [12 <./container-vs-vm-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
 
  []
 
@@ -686,7 +686,7 @@ Package epstopdf Info: Source file: <docker-architektura.eps>
 (epstopdf)                    size: 30503 bytes
 (epstopdf)             Command: <epstopdf --outfile=docker-architektura-eps-con
 verted-to.pdf docker-architektura.eps>
-(epstopdf)             \includegraphics on input line 299.
+(epstopdf)             \includegraphics on input line 296.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -696,90 +696,126 @@ pdfTeX warning: pdflatex.exe (file ./docker-architektura-eps-converted-to.pdf):
 File: docker-architektura-eps-converted-to.pdf Graphic file (type pdf)
 <use docker-architektura-eps-converted-to.pdf>
 Package pdftex.def Info: docker-architektura-eps-converted-to.pdf  used on inpu
-t line 299.
+t line 296.
 (pdftex.def)             Requested size: 312.9803pt x 161.64165pt.
 
-Overfull \hbox (1.9043pt too wide) in paragraph at lines 305--306
+Overfull \hbox (1.9043pt too wide) in paragraph at lines 302--303
 \T1/ptm/m/n/12 lett ko-moly er®feszítéseket tett az egyetlen pro-gram ked-véért
  létez® kon-ténerek m¶ködésé-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 
  []
 
 [13 <./docker-architektura-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
  []
 
 
-Overfull \hbox (7.78091pt too wide) in paragraph at lines 309--310
-\T1/ptm/m/n/12 példányokat. Alapvet®en két-féle vir-tu-al-izá-ció lehet-séges. 
-Vagy min-den egyes ROS példány-
+Overfull \hbox (10.29642pt too wide) in paragraph at lines 306--307
+\T1/ptm/m/n/12 Alapvet®en két-féle vir-tu-al-izá-ció lehet-séges. Vagy min-den 
+egyes ROS példány-nak al-lokálunk
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
+
+ []
+
+
+Overfull \hbox (18.85266pt too wide) in paragraph at lines 310--311
+\T1/ptm/m/n/12 A fe-la-dat részét képezi több fel-h® tech-noló-gia kipróbálása,
+ rend-szerbe in-te-grálása. Alapvet®en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
 [14]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 322.
+4. fejezet.
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 322.
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 322.
+Overfull \hbox (4.25565pt too wide) in paragraph at lines 322--323
+\T1/ptm/m/n/12 A meg-valósí-tandó rend-sz-er egy PoC, ami nem feltétlenül egy f
+e-la-da-tra op-ti-mal-izált konkrét
+ []
 
-Underfull \hbox (badness 1062) in paragraph at lines 328--329
-[]\T1/ptm/m/n/12 Docker lightweight con-tain-er en-gine (https://www.docker.com
-/products/docker-
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
+
  []
 
 [15
 
 ]
-Underfull \hbox (badness 3942) in paragraph at lines 338--339
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 340.
+
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 340.
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 340.
+
+Underfull \hbox (badness 1062) in paragraph at lines 346--347
+[]\T1/ptm/m/n/12 Docker lightweight con-tain-er en-gine (https://www.docker.com
+/products/docker-
+ []
+
+[16
+
+]
+Underfull \hbox (badness 3942) in paragraph at lines 356--357
 []\T1/ptm/m/n/12 Dr. Sz-abó Zsolt, Bu-dai Csa-ba, Dr. Kovács Lás-zló, Dr. Lipov
 sz-ki Györ-
  []
 
 
-Underfull \hbox (badness 7379) in paragraph at lines 338--339
+Underfull \hbox (badness 7379) in paragraph at lines 356--357
 \T1/ptm/m/n/12 gy: Robot-mech-a-niz-mu-sok Web site tananyag, robotok cso-por-t
 osítása fe-
  []
 
 
-Underfull \hbox (badness 6725) in paragraph at lines 340--341
+Underfull \hbox (badness 6725) in paragraph at lines 358--359
 []\T1/ptm/m/n/12 Debian op-erá-ciós rend-sz-er (https://www.debian.org/), utolj
 ára megtek-intve:
  []
 
 
-Underfull \hbox (badness 3525) in paragraph at lines 342--343
+Underfull \hbox (badness 3525) in paragraph at lines 360--361
 []\T1/ptm/m/n/12 Ubuntu op-erá-ciós rend-sz-er (https://www.ubuntu.com/), utolj
 ára megtek-intve:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 344--345
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
 []\T1/ptm/m/n/12 ROS-t és Cloudroid-ot fel-használó speci-fikus robot-felh® szo
 l-gál-tató
  []
 
 
-Underfull \hbox (badness 2452) in paragraph at lines 346--347
+Underfull \hbox (badness 2452) in paragraph at lines 364--365
 []\T1/ptm/m/n/12 Ákos, Kovács: Dock-er, a kon-tén-er alapú vir-tu-al-izá-ció em
  Re-fak-tor Mag-a-
  []
 
-[16] (Diplomamunka_Haraszti_Gabor_DPWF3Y.aux) ) 
+[17] (Diplomamunka_Haraszti_Gabor_DPWF3Y.aux) ) 
 Here is how much of TeX's memory you used:
  4822 strings out of 492969
  67514 string characters out of 3135835
@@ -796,10 +832,10 @@ C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on Diplomamunka_Haraszti_Gabor_DPWF3Y.pdf (16 pages, 1872582 byt
+Output written on Diplomamunka_Haraszti_Gabor_DPWF3Y.pdf (17 pages, 1874968 byt
 es).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
+ 137 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
