@@ -321,16 +321,35 @@
 	
 	% Kubernetes - Egy mikroservice és Docker mgmt cucc: https://kubernetes.io/
 	
-	\section{ROS - Robot Operating System}
+	\section{ROS -- Robot Operating System}
 	
-	A feladathoz felhasznált alap, a ROS \cite{ROS}, melynek szolgáltatásai kívánjuk a TCP/IP hálózaton kerewsztül elérni, Internet-en keresztül távolról szolgáltatni. Alapvetõen arra tervezték, hogy robot kontrolleren fusson és helyi, egyedi protokollokon kommunikáljon a többi ROS példánnyal.\\
+	% https://hub.packtpub.com/ros-architecture-and-concepts/
+	
+	A feladathoz felhasznált alap, a ROS \cite{ROS}, melynek szolgáltatásai kívánjuk a TCP/IP hálózaton kerewsztül elérni valamint Internet-en keresztül távolról szolgáltatni. Alapvetõen arra tervezték, hogy robot kontrolleren fusson és helyi, egyedi protokollokon kommunikáljon a többi ROS példánnyal, Node-al.\\
 	
 	A megnövekedett feladatok és új kihívások miatt egyre sürgetõbbé vált, hogy elérhetõ legyen a megszokott Internetes protokollokon keresztül, funkcionalitása felkerüljön a felhõbe is. Sajnos eredeti tervezése szerint nagyon kötõdik a fizikai robothoz, az alap struktúra az egy robot egy ROS példány, a kontextusfüggõ paraméterek mindenképpen ROS szinten találhatók meg. Itt tudjuk megadni a konkrét robot paramétereit, valamint a környezetének a leírását is. Viszont van számos olyan funkcionalitás a ROS-hoz -- a hozzá kapcsolódó kiterjedt modul könyvtárban --, melyek nem kontextus függõek és így könnyen leválaszthatóak szolgáltatásként.\\
 	
-	Alapvetõen a ROS egy middleware, mely bizonyos Linux disztribúciókra épül rá. Tartalmaz számos kódkönyvtárat, valamint több szolgáltatást is nyújt. Szerviz végpontokat nyújt távoli eljárások felé, úgynevezett RPC~\footnote{Remote Procedure Call} végpontokat lehet rajta definiálni. Üzenet továbbító szolgáltatása publisher/subscriber rendszerben képes adott formátumú üzenetek fogadására, továbbítására, valamint képes felvenni és visszajátszani a kapott vagy küldött üzeneteket. Az ilyen szolgáltatás végpontokat hívjuk a ROS terminológiában topic-oknak. Tartalmaz továbbá egy elosztott paraméter rendszert, globális katalógust, melyet, mint egy adatbázist a ROS Master-rõl lehet elérni.\\
+	\begin{figure}[ht!]
+		\centering
+		\includegraphics[width=0.7\linewidth]{ROS}
+		\caption[ROS Architektúra]{ROS Architektúra}
+		\label{fig:ros}
+	\end{figure}
 	
-	Az adott gépen futó ROS-ban Node-okat tudunk definiálni, melyek logikai összefoglalói a kiajánlott szolgáltatásoknak, "fizikailag" az operációs rendszer processzei. A ROS Master egy névtér és regisztrációs szolgáltatás a ROS Node-oknak.\\
+	Alapvetõen a ROS egy middleware, mely bizonyos Linux disztribúciókra épül rá. Tartalmaz számos kódkönyvtárat, valamint több szolgáltatást is nyújt. Architektúráját a \ref{fig:ros} ábra szemlélteti. A ROS számítási háló szinten a következõ elemeket tartalmazza:\\
 	
+	\begin{description}
+		\item[Nodes]A csomópont az operációs rendszeren futó processzt reprezentálja, valamennyi egyéb szolgáltatásnak hozzá kell tartoznia egy Node-hoz. Tipikusan egy rendszer több Node-ot tartalmaz, funkcionalitás szerint szétbontva a feladatokat.\vspace{-9pt}
+		\item[Master]A Master a Node-ok számára szolgáltat egy regisztrációs szolgáltatást, ahol a Node-ok meg tudják "hirdetni" szolgáltatáskészletüket. Ha a Master nem mûködik a rendszerben, akkor a Node-ok szolgáltatásai sem érhetõk el. Egy elosztott rendszerben elegendõ egy Master egy számítógépen, míg a Node-ok futhatnak több gépen is.\vspace{-9pt}
+		\item[Parameter Server] Gyakorlatilag egy Key-Value store, NoSQL adatbázis szerver egy központi helyen. A Node-ok tudják felhasználni a benne tárolt központi paraméterek értékeit a konfigurációjukhoz, mûködésükhöz.\vspace{-9pt}
+		\item[Messages]A Node-ok üzenetekkel kommunikálnak egymás között. Az üzenet olyan adatokat tartalmaz, amelyek információkat ad más csomópontoknak. A ROS-nak sokféle üzenete van, és a szokásos üzenettípusok segítségével akár saját típusú üzenetet is létrehozhatunk.\vspace{-9pt}
+		\item[Topic](Téma) Minden üzenetnek nevének kell lennie, amelyet a ROS hálózat elindít. Ha egy csomópont adatokat küld, azt mondjuk, hogy a csomópont közzétesz egy üzenetet a Topic-ban. A csomópontok más csomópontok témáit is megkaphatják, egyszerûen feliratkozva a témára. A csomópont elõfizethet egy témára, még akkor is, ha nincsenek olyan más csomópontok, amelyek erre a konkrét témára vonatkoznak, ami lehetõvé teszi számunkra, hogy elválasszuk a termelést /publish/ a fogyasztástól /subscribe/. Ez egy hagyományos, úgynevezett publisher / subscriber modell. Fontos, hogy a topic-ok neve egyedi legyen!\vspace{-9pt}
+ 		\item[Services](Szolgáltatások) A témák közzétételekor sokfelé küldhetünk üzenetet, több feliratkozónak is, de ha választ is akarunk akkor ezt nem tehetjük meg a témákkal. A szolgáltatások lehetõvé teszik számunkra a csomópontokkal való interakciót. A szolgáltatásoknak egyedi névvel kell rendelkezniük. Ha egy csomópontnak van egy szolgáltatása, az összes csomópont kommunikálhat vele, köszönhetõen a ROS ügyfélkönyvtárainak.\vspace{-9pt}
+ 		\item[Bags] A táskák egy formátum ROS üzenetek elmentésére és visszajátszására, fontos mechanizmus az adatok tárolására, -- például a szenzora adatok eltárolására a teszteléshez, fejlesztéshez és ezek szükség szerinti visszajátszása --.\vspace{-9pt}
+	\end{description}	
+	
+	\bigskip
+
 	\chapter{A megvalósítandó rendszer specifikációja}
 	
 	A megvalósítandó rendszer egy PoC, ami nem feltétlenül egy feladatra optimalizált konkrét megvalósítás, sokkal inkább a technológiák kipróbálására szolgáló megoldás, így minden kipróbálandó technológia része lesz a kialakított architektúrának. Alapvetõen célja, hogy a robotikai kutatások, alkalmazások számára ki lehessen választani a legjobb megoldást a rendelkezésre álló eszközkészletbõl. A rendszer által megvalósított példa feladat a pályatervezés lesz, amit a rendszerben különféle pontokra kihelyezve tesztelünk sebességre és válaszidõre.\\

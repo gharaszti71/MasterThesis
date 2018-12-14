@@ -4,6 +4,6 @@
 \select@language {magyar} \contentsline {section}{\numberline {3.1}Oper\'aci\'os rendszer}{11}
 \select@language {magyar} \contentsline {section}{\numberline {3.2}Virtualiz\'aci\'os technol\'ogia}{12}
 \select@language {magyar} \contentsline {section}{\numberline {3.3}Felh\H o szolg\'altat\'asok}{14}
-\select@language {magyar} \contentsline {section}{\numberline {3.4}ROS - Robot Operating System}{15}
-\select@language {magyar} \contentsline {chapter}{\numberline {4}A megval\'os\IeC {\'\i }tand\'o rendszer specifik\'aci\'oja}{16}
-\select@language {magyar} \contentsline {chapter}{Irodalomjegyz\'ek}{17}
+\select@language {magyar} \contentsline {section}{\numberline {3.4}ROS -- Robot Operating System}{15}
+\select@language {magyar} \contentsline {chapter}{\numberline {4}A megval\'os\IeC {\'\i }tand\'o rendszer specifik\'aci\'oja}{17}
+\select@language {magyar} \contentsline {chapter}{Irodalomjegyz\'ek}{18}
