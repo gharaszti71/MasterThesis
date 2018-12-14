@@ -6,4 +6,4 @@
 \select@language {magyar} \contentsline {section}{\numberline {3.3}Felh\H o szolg\'altat\'asok}{14}
 \select@language {magyar} \contentsline {section}{\numberline {3.4}ROS -- Robot Operating System}{15}
 \select@language {magyar} \contentsline {chapter}{\numberline {4}A megval\'os\IeC {\'\i }tand\'o rendszer specifik\'aci\'oja}{17}
-\select@language {magyar} \contentsline {chapter}{Irodalomjegyz\'ek}{18}
+\select@language {magyar} \contentsline {chapter}{Irodalomjegyz\'ek}{19}

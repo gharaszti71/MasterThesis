@@ -49,6 +49,9 @@
 \renewcommand{\indent}{\hspace*{\tindent}}
 
 %Margók:
+% HK beállításai
+%\usepackage[top=25 mm, bottom=40 mm, left=35 mm, right=25 mm]{geometry}
+% saját kikalkulált
 \hoffset -1in
 \voffset -1in
 \oddsidemargin 35mm
@@ -61,6 +64,9 @@
 
 % sorköz 1,15
 \linespread{1.15}
+
+% Elválasztások
+\hyphenation{sze-rint mun-ka-te-rü-le-ten szá-mí-tó-gé-pe-ket ke-ret-rend-szer-be meg-fe-le-lõ-ket mû-kö-dés-é-ért gaz-da-gé-pen vesz-nek szoft-ve-rek meg-fe-le-lõ el-ér-he-tõ-ek ké-nyel-me-sen fel-tö-rek-võ al-lo-ká-lunk hasz-ná-lunk A-lap-ve-tõ-en pá-lya-ter-ve-zés szem-pont-já-ból me-nedzs-ment}
 
 \begin{document}
 	
@@ -100,25 +106,20 @@
 		
 		\vspace*{1cm}
 		
+				\vspace*{2.3cm}
+				
 		%Értelemszerûen megváltoztatandó:
-		\begin{tabular}{ r r }
+		\begin{tabular}{ l l r }
 			%\hline
 			% after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
-			OE-NIK & HARASZTI GÁBOR \\
-			0 & 0 \\
+			OE-NIK & Hallgató neve & HARASZTI GÁBOR \\
+			2019 & Hallgató törzskönyvi száma: & DPWF3Y \\
 			% \hline
 		\end{tabular}
-		\begin{flushleft}
-			{\Large\bf OE-NIK            HARASZTI GÁBOR}
-		\end{flushleft}
-		\vspace*{2.3cm}
+
+
 		
-		{\Large
-			Budapest
-			\\
-			\vspace{2mm}
-			2019
-		}
+
 	\end{center}
 	
 	
@@ -136,8 +137,6 @@
 	
 	Fontos felhasználási területe lesz a felhõ szolgáltatásoknak a szolgáltató robotok. Jelenleg ugyan elenyészõ a számarányuk az ipari robotokhoz képest, viszont a jövõben ez jelentõsen változni fog -- egyes becslések szerint a 2015-ös 22\%-ról 2025-re 66\%-ot várnak --. Fontos viszont megkülönböztetnünk a szolgáltató robotokat az ipari robotoktól. Az ISO 13482-es szabvány szerint az ipari és szolgáltató robotoknak a definíciója:\\
 
-	\newpage
-
 	\begin{description}
 		\item[ipari robot:] Az ipari robot egy automatikus irányítású, újraprogramozható, többcélú automatikus ipari feladatok elvégzésére használt manipulátor, három vagy több tengelye programozható, melyek lehetnek rögzítettek vagy mobilak.\vspace{-9pt}
 		\item[szolgáltató robot:] Olyan robot, amely hasznos feladatokat hajt végre emberek vagy berendezések számára, kivéve az ipari automatizáló berendezéseket.\vspace{-9pt}
@@ -145,7 +144,7 @@
 
 	\bigskip
 
-	Mint látható a megfogalmazásból a szolgáltató robotok definíciója elég tág, ezért érdemes pár egyéb szempont szerint is megvizsgálni, ami a Robotmechanizmusok jegyzet \cite{RobotCsop} sze-rint a következõ:\\
+	Mint látható a megfogalmazásból a szolgáltató robotok definíciója elég tág, ezért érdemes pár egyéb szempont szerint is megvizsgálni, ami a Robotmechanizmusok jegyzet \cite{RobotCsop} szerint a következõ:\\
 	
 	\begin{tabular}{ | p{4cm} | p{5cm} | p{5cm} | }
 		\hline
@@ -158,7 +157,7 @@
 		\hline
 		BIZTONSÁG & Gépfüggõ & Robot és felhasználófüggõ \\
 		\hline
-		MUNKAFILOZÓFIA & Robotok és emberek elkülönítése & Robotoknak és embereknek meg kell osztozniuk a munka-területen, hogy szolgáltatást nyújtsanak/kapjanak \\
+		MUNKAFILOZÓFIA & Robotok és emberek elkülönítése & Robotoknak és embereknek meg kell osztozniuk a munkaterületen, hogy szolgáltatást nyújtsanak/kapjanak \\
 		\hline
 		GÉP TERVEZÉSE & Megbízásra rugalmasan reagál & Igényre rugalmasan reagál \\
 		\hline
@@ -228,13 +227,13 @@
 	
 	Végül a cikk áttekinti a CPS rendszerek tervezésének hardware aspektusait, kezdve az egyszerû Raspberry Pi-tõl az ipari PLC-n át -- Programmable Logic Controller -- a PC-kig. Operációs rendszernek -- a PLC kivételével -- Linux-ot ajánl, valamint a ROS-t, mint middleware-t.\\
 	
-	Christopher Crick és munkatársai Rosbridge-el fogglalkozó cikke \cite{Rosbridge} bemutatja a Rosbridge-et, mint a ROS egy köztes réteg absztrakciós szintjét, interfészt a nem ROS felhasználók felé. Lényegében a Rosbridge létrehoz a ROS szolgáltatásaihoz egy roxy-t, amit más környezetekbõl fel tudunk használni, ráadásul akár az internetrõl is, mert a tûzfalbarát WebSocket-et használja a kliensek felé.\\
+	Christopher Crick és munkatársai Rosbridge-el fogglalkozó cikke \cite{Rosbridge} bemutatja a Ros\-bridge-et, mint a ROS egy köztes réteg absztrakciós szintjét, interfészt a nem ROS felhasználók felé. Lényegében a Rosbridge létrehoz a ROS szolgáltatásaihoz egy roxy-t, amit más környezetekbõl fel tudunk használni, ráadásul akár az internetrõl is, mert a tûzfalbarát WebSocket-et használja a kliensek felé.\\
 	
 	A cikk bemutatja a ROS-t is. Legfelül vannak az egymással üzeneteket váltó Node-ok, amik szervizekkel és topic-okkal kommunikálnak egymással. A szervizeket úgy kell elképzelni, mint távoli funkció hívásokat, míg a topic-ok olyan folyamatos adatfolyamok, melyekbe "bárki" beleírhat és melyek üzeneteire "bárki" feliratkozhat.\\
 	
 	A Rosbridge egy következõ absztrakciós szint a ROS-hoz képest. Képes igény szerint elindítani és leállítani ROS node-okat, a kommunikációt a kliensekkel pedig JSON formában bonyolítja. Lényegében bármely klienssel képes kommunikálni, amelyik "megérti" a JSON formátumot, Web alkalmazásokkal, vagy például Java, .NET szoftverekkel is. Nem csak HTML5 WebSocket-ekkel képes kommunikálni a klienseivel, hanem akár hagyományos POSIX IP socketekkel is. Kiadtak hozzá egy Javascript könyvtárat is a ROSJS-t, amit könnyen integrálni tudunk a Javascript-ben megírt programokhoz.\\
 	
-	Ben Hu és munkatársai Cloudroid-al foglalkozó cikke \cite{Cloudroid} betekintést enged egy nyílt forráskódú felhõ keret-rendszerbe \cite{CloudroidWeb}, mely lehetõséget biztosít a meglévõ robotikai szoftverek számára, hogy felhõbe konvertálhatók legyenek, biztosítva számukra a teljes átalakítási transzparenciát az Internet-en elért felhõ szolgáltatás felhasználása mellett, a megfelelõ QoS -- Quality of Service -- biztosításával. A biztonságot növelõ megoldása, hogy ha hálózati hiba keletkezik képes a kliensnek legenerált Stub visszakapcsolni lokális hívásra, hogy ne akadjon meg végzetesen az elkezdett folyamat.\\
+	Ben Hu és munkatársai Cloudroid-al foglalkozó cikke \cite{Cloudroid} betekintést enged egy nyílt forráskódú felhõ keretrendszerbe \cite{CloudroidWeb}, mely lehetõséget biztosít a meglévõ robotikai szoftverek számára, hogy felhõbe konvertálhatók legyenek, biztosítva számukra a teljes átalakítási transzparenciát az Internet-en elért felhõ szolgáltatás felhasználása mellett, a megfelelõ QoS -- Quality of Service -- biztosításával. A biztonságot növelõ megoldása, hogy ha hálózati hiba keletkezik képes a kliensnek legenerált Stub visszakapcsolni lokális hívásra, hogy ne akadjon meg végzetesen az elkezdett folyamat.\\
 	
 	A Cloudroid mögöttes technológiája a Rosbridge, annak absztrakciójára épül, hasonlóan, mint a Rapyuta publikus robotikai felhõ szolgáltató rendszere, mindketten megvalósítják a PaaS -- Platform as a Service -- infrastruktúra szolgáltatást. Bevezet négy mehanizmust:
 	 
@@ -251,7 +250,7 @@
 	
 	.\vspace{9pt}
 	
-	Russell Toris és munkatársai Robot Web Tools-al foglalkozó cikke \cite{RWT} a nevezett, Rosbridge-re épülõ Javascript keretrendszerrel foglalkozik. A ROSJS mellett ez a másik feltörekvõ, bár kicsit más készletet tartalmazó, Rosbridge-re épülõ keretrendszer. Alapvetõen három részbõl tevõdik össze az RWT, a {\em roslibjs} egy kliens könyvtár, a {\em ros2djs} és a {\em ros3djs} pedig vizualizációs könyvtár. \\
+	Russell Toris és munkatársai Robot Web Tools-al foglalkozó cikke \cite{RWT} a nevezett, Ros\-bridge-re épülõ Javascript keretrendszerrel foglalkozik. A ROSJS mellett ez a másik feltörekvõ, bár kicsit más készletet tartalmazó, Rosbridge-re épülõ keretrendszer. Alapvetõen három részbõl tevõdik össze az RWT, a {\em roslibjs} egy kliens könyvtár, a {\em ros2djs} és a {\em ros3djs} pedig vizualizációs könyvtár. \\
 	
 	A {\em roslibjs} felhasználható bármely helyen mindenféle vizualizációs függõség nélkül. Egy kliens könyvtár, ami képes kommunikálni a ROS topic-okkal és szervizekkel. Tartalmaz továbbá eszközöket az alapvetõ robotikai feladatok ellátására, például transzfomációk, URDF -- Unified Robot Description Format -- parser és alapvetõ mátrix, vektor számítások.\\
 	
@@ -263,7 +262,7 @@
 	
 	\chapter{Felhasznált technológiák bemutatása}
 	
-	A diplomamunka feladat által megvalósítandó PoC környezet kiépítéséhez több technológiát is meg kellett vizsgálni, mint lehetséges alternatívákat és a munkához megfele-lõket ki kellett választani. A kialakítandó rendszerben használni kell majd saját szervereken futó virtualizációs környezeteket -- leginkább konténer technológiával --,  futtatni kell HTTP szervert, valamint ROS példányokat. A rendszer részei lesznek az Amazon AWS és Microsoft Azure felhõ szolgáltatók által nyújtott virtualizációs és funkcionális szolgáltatásai is. \\
+	A diplomamunka feladat által megvalósítandó PoC környezet kiépítéséhez több technológiát is meg kellett vizsgálni, mint lehetséges alternatívákat és a munkához megfelelõket ki kellett választani. A kialakítandó rendszerben használni kell majd saját szervereken futó virtualizációs környezeteket -- leginkább konténer technológiával --,  futtatni kell HTTP szervert, valamint ROS példányokat. A rendszer részei lesznek az Amazon AWS és Microsoft Azure felhõ szolgáltatók által nyújtott virtualizációs és funkcionális szolgáltatásai is. \\
 	
 	\section{Operációs rendszer}
 
@@ -301,11 +300,11 @@
 	\end{center}
 	\end{figure}
 	
-	A Docker elõdje a 2008-ban megjelent LXC~\footnote{Linux containers} volt, amely ugyan konténer alapú, de teljes virtuális gépeket kezel. Ezzel szemben a Docker a konténer formátum egységesítése mellett komoly erõfeszítéseket tett az egyetlen program kedvéért létezõ konténerek mûködésé-ért.\\ 
+	A Docker elõdje a 2008-ban megjelent LXC~\footnote{Linux containers} volt, amely ugyan konténer alapú, de teljes virtuális gépeket kezel. Ezzel szemben a Docker a konténer formátum egységesítése mellett komoly erõfeszítéseket tett az egyetlen program kedvéért létezõ konténerek mûködéséért.\\ 
 	
 	Architektúráját a ~\ref{fig:dockervskernel} ábra a \pageref{fig:vmvscontainer}. oldalon szemlélteti. Bemutatja, hogy a Docker milyen kapcsolatban áll a Linux kernellel. Látható, hogy a namespace-k és az erõforrások kiosztásáért, limitációjáért felelõs cgroups is a kernel részegysége. A libcontainer a jelenlegi, az LXC driver-t váltó megoldás, gyakorlatilag nem más, mint egy egységes interfész konténerek létrehozására. A libvirt egy API, egy menedzsment eszköz a virtualizációhoz. A systemd-nspawn egy chroot-hoz hasonló megoldás, azonban ez utóbbi teljesen virtualizálja a fájlrendszer hierarchiáját, a folyamatokat, illetve az IPC alrendszereket.\cite{DockerArchi}\\
 	
-	A PoC-hoz szükséges lesz virtualizációs technológia használatára, ahol az elõzõ pontban megvizsgált operációs rendszereken virtualizálva tudjuk majd futtatni a ROS példányokat. Alapvetõen kétféle virtualizáció lehetséges. Vagy minden egyes ROS példánynak allokálunk egy gazda-gépen futó, komplett vendég operációs rendszert, ami megfelel a hagyományos virtualizációs technológiának, vagy pedig valami konténer technológiát használunk. A ROS követelményeit áttekintve a feladat nem igényel feltétlenül nehézsúlyú megoldást, nincs szükség sokféle operációs rendszerre és a megvizsgált felhõ technológiák is támogatják, ezért a Docker konténer technológiáját választottam.\\
+	A PoC-hoz szükséges lesz virtualizációs technológia használatára, ahol az elõzõ pontban megvizsgált operációs rendszereken virtualizálva tudjuk majd futtatni a ROS példányokat. Alapvetõen kétféle virtualizáció lehetséges. Vagy minden egyes ROS példánynak allokálunk egy gazdagépen futó, komplett vendég operációs rendszert, ami megfelel a hagyományos virtualizációs technológiának, vagy pedig valami konténer technológiát használunk. A ROS követelményeit áttekintve a feladat nem igényel feltétlenül nehézsúlyú megoldást, nincs szükség sokféle operációs rendszerre és a megvizsgált felhõ technológiák is támogatják, ezért a Docker konténer technológiáját választottam.\\
 	
 	\section{Felhõ szolgáltatások}
 	
@@ -352,19 +351,37 @@
 
 	\chapter{A megvalósítandó rendszer specifikációja}
 	
-	A megvalósítandó rendszer egy PoC, ami nem feltétlenül egy feladatra optimalizált konkrét megvalósítás, sokkal inkább a technológiák kipróbálására szolgáló megoldás, így minden kipróbálandó technológia része lesz a kialakított architektúrának. Alapvetõen célja, hogy a robotikai kutatások, alkalmazások számára ki lehessen választani a legjobb megoldást a rendelkezésre álló eszközkészletbõl. A rendszer által megvalósított példa feladat a pályatervezés lesz, amit a rendszerben különféle pontokra kihelyezve tesztelünk sebességre és válaszidõre.\\
+	A megvalósítandó rendszer egy PoC, ami nem feltétlenül egy feladatra optimalizált konkrét megvalósítás, sokkal inkább a technológiák kipróbálására szolgáló rendszer, így minden kipróbálandó technológia része lesz a kialakított architektúrának. Alapvetõen célja, hogy a robotikai kutatások, alkalmazások számára ki lehessen választani a legjobb megoldást a rendelkezésre álló eszközkészletbõl. A rendszer által megvalósított példa feladat a pályatervezés, amit a rendszerben különféle pontokra kihelyezve tesztelünk különbözõ szempontokra.\\
+	
+	\begin{figure}[th!]
+		\centering
+		\includegraphics[width=0.7\linewidth]{feladat-architektura-ROS}
+		\caption[Docker - ROS konfiguráció]{Docker - ROS konfiguráció}
+		\label{fig:feladat-architektura-ros}
+	\end{figure}
+	
+	A \ref{fig:feladat-architektura-ros} ábra bemutatja a tervezett architektúra részletet a ROS-os szolgáltatások szempontjából. Az alapja a hardvert szolgáltató infrastruktúra, amit szándékosan nem neveztem el számítógépnek, mert például a felhõ szolgáltatók esetében nem tudom, hogy ez ténylegesen egy fizikai számítógép-e, vagy egy VM\footnote{Virtual Machine - virtuális gép}. Az infrastruktúrális alap fölött helyezkedik el a kiválasztott operációs rendszer, ami tartalmazni fog egy alap ROS telepítést.\\
+	
+	Az alap ROS-ra azért van szükség, mert ez egy nem elhanyagolható méretû és közösen használt komponens lesz majd minden konténerben és alapszabály, hogy az egyes konkrét image\footnote{A Docker által készített képfájl, mely tartalmazza az alap rendszerhez képest a különbségeket.}-eknek nem szabad túl nagynak lenniük, lehetõleg tényleg csak a specifikus dolgokat tartalmazzák. Természetesen, amennyiben a platform -- felhõ szolgáltatás -- nem képes elõtelepített komponenseket kezelni a Docker szolgáltatáson, akkor minden egyes image-be bele kell tenni a teljes ROS-t is, valamint ha már eleve adott a ROS-os konténer technológia, mint a Rapyuta esetében, akkor nem szükséges a \ref{fig:feladat-architektura-ros} ábra szerinti rendszert felépíteni.\\
+	
+	Minden kipróbálandó konfiguráció tartalmazni fog egy Rosbridge példányt is -- szintén egy konténerben --, mely Internet képessé teszi a konténerben futó ROS Node által szolgáltatott funkcionalitást -- esetünkben a pályatervezést -- és minden esetben lesz egy lokális Edge\cite{GP_Cloud} gép, mely az összeköttetést biztosítja a helyi rendszerrel, ahogy az a \ref{fig:feladat-architektura-felho} ábrán látható. A laborban természetesen össze lesz kötve egy UR5-ös robottal a rendszer, melyen megtekinthetjük a pályatervezés eredményét, de ez az UR robotokhoz meglévõ emulált környezetben is lehetséges lesz a fejlesztés ideje alatt.\\
+	
+	\begin{figure}[th!]
+		\centering
+		\includegraphics[width=0.7\linewidth]{docker-architektura-Felho}
+		\caption[Felhõ konfiguráció]{Felhõ konfiguráció}
+		\label{fig:feladat-architektura-felho}
+	\end{figure}
 	
 	%https://github.com/cyberdb/Cloudroid
-	A rendszerhez felhasználjuk a Cloudroid\cite{Cloudroid} szoftvert a ROS szolgáltatásainak kiajánlására az Internet alapú hálózat felé. 
-	
-	
+	A rendszerhez kipróbálásra kerül a Cloudroid\cite{Cloudroid} szoftvert, mely összefogja a Rosbridge által kiajánlott Node-ok szolgáltatásait és egységes felületbe fogja össze, valamint menedzsment interfészt biztosít a Rosbridge szolgáltatások felé.\\
 	
 	\begin{thebibliography}{99}
 		% 10-nél több hivatkozás esetén
 		
 		\addcontentsline{toc}{chapter}{Irodalomjegyzék}
 		
-		\bibitem{GP_Cloud}Péter Galambos: Cloud-, Fog-, and Mist Computing in Service of Advanced Robot Applications, {\em {\color{red} ide be kell irni majd, hogy GP cikke hol jelent meg!}}, 1969, pp.111-222.\vspace{-9pt}
+		\bibitem{GP_Cloud}Péter Galambos: Cloud-, Fog-, and Mist Computing in Service of Advanced Robot Applications, 2019, pp.111-222.\vspace{-9pt}
 		
 		\bibitem{ICMS}Xi Vincent Wang, Lihui Wang, Abdullah Mohammed, Mohammad Givehci (Department of Production Engineering, KTH Royal Institute of Technology, Stockholm, Sweden): Ubiquitous manufacturing system based on Cloud: Robotics, {em ELSEVIER, Robotics and Computer-Integrated Manufacturing}, 45.szám, 2017, pp.116-125\vspace{-9pt}
 		
